@@ -1,12 +1,12 @@
 [
    {
         "id": 1,
-        "question": "A or B?",
-        "choices": ["A", "B"] 
+        "question": "A, B, or C?",
+        "choices": ["A", "B", "C"] 
    },
    {
         "id": 2,
-        "question": "C or D?",
-        "choices": ["C", "D"]
+        "question": "D, E, or F?",
+        "choices": ["D", "E", "F"]
    }
 ]

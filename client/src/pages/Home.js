@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import QA from "../data/questions.json";
+import QADisplay from "../components/QADisplay"
 
 class Home extends Component {
 
     state = {
         QA,
         question: QA[0].question,
-        answersChoices: [],
+        // answerChoices: [],
+        answerChoices: QA[0].choices,
         chosen: ""
     };
 
@@ -19,7 +21,10 @@ class Home extends Component {
         return(
             <div>
                 <p>Testing 1 2 3!</p>
-                <p>Question one: {this.state.question}</p>
+                <QADisplay
+                question={this.state.question}
+                answers={this.state.answerChoices}
+                />
             </div>
         );
     }
