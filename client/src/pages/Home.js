@@ -31,9 +31,45 @@ class Home extends Component {
                     answerChoices: QA[3].choices
                     });
                     break;
+            case "D":
+                this.setState({ 
+                    question: QA[0].question,
+                    answerChoices: QA[0].choices
+                    });
+                    break;
+            case "E":
+                this.setState({ 
+                    question: QA[2].question,
+                    answerChoices: QA[2].choices
+                    });
+                    break;
+            case "F":
+                this.setState({ 
+                    question: QA[3].question,
+                    answerChoices: QA[3].choices
+                    });
+                    break;
+            case "G":
+                this.setState({ 
+                    question: QA[0].question,
+                    answerChoices: QA[0].choices
+                    });
+                    break;
+            case "H":
+                this.setState({ 
+                    question: QA[1].question,
+                    answerChoices: QA[1].choices
+                    });
+                    break;
+            case "I":
+                this.setState({ 
+                    question: QA[3].question,
+                    answerChoices: QA[3].choices
+                    });
+                    break;
             default:
                 console.log("ERRRROROROROR");
-                alert("Whoops! Looks like I forgot to add a case for that one...")
+                alert("Whoops! Looks like I didn't add a case for that one...")
         }
     }
     
