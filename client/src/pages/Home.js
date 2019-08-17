@@ -7,14 +7,34 @@ class Home extends Component {
     state = {
         QA,
         question: QA[0].question,
-        // answerChoices: [],
         answerChoices: QA[0].choices,
         chosen: ""
     };
 
-    chooseQuestion = () => {
-        let QA = [...this.state.QA];
-        this.setState({ question: QA[0].question })
+    nextQuestion = (choices) => {
+        switch (choices) {
+            case "A": 
+                this.setState({ 
+                    question: QA[1].question,
+                    answerChoices: QA[1].choices
+                });
+                break;
+            case "B":
+                this.setState({ 
+                    question: QA[2].question,
+                    answerChoices: QA[2].choices
+                });
+                break;
+            case "C":
+                this.setState({ 
+                    question: QA[3].question,
+                    answerChoices: QA[3].choices
+                    });
+                    break;
+            default:
+                console.log("ERRRROROROROR");
+                alert("Whoops! Looks like I forgot to add a case for that one...")
+        }
     }
     
     render() {
@@ -23,7 +43,8 @@ class Home extends Component {
                 <p>Testing 1 2 3!</p>
                 <QADisplay
                 question={this.state.question}
-                answers={this.state.answerChoices}
+                choices={this.state.answerChoices}
+                nextQuestion={this.nextQuestion}
                 />
             </div>
         );

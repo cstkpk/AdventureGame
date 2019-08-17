@@ -7,12 +7,14 @@ function QADisplay(props) {
             <Card.Body>
                 <Card.Title>Question: {props.question}</Card.Title>
                 <Card.Text>
-                    {props.answers.map(answers => (
+                    {props.choices.map(choices => (
                     <Button 
                     className="btn-info btn-block"
-                    key={answers}
+                    key={choices}
+                    val={choices}
+                    onClick={() => props.nextQuestion(choices)}
                     >
-                    {answers}
+                    {choices}
                     </Button>
                     ))}
                 </Card.Text>

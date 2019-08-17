@@ -8,5 +8,15 @@
         "id": 2,
         "question": "D, E, or F?",
         "choices": ["D", "E", "F"]
+   },
+   {
+       "id": 3,
+       "question": "G, H, or I?",
+       "choices": ["G", "H", "I"]
+   },
+   {
+       "id": 4,
+       "question": "J, K, or L?",
+       "choices": ["J", "K", "L"]
    }
 ]
