@@ -6,11 +6,12 @@ function QADisplay(props) {
         <Col md={12}>
             <Card>
                 <Card.Body>
-                    <Card.Title>Question: {props.question}</Card.Title>
+                    <Card.Title>{props.question}</Card.Title>
                     <Card.Text>
                         {props.choices.map(choices => (
                         <Button 
-                        className="btn-info btn-block"
+                        variant="outline-dark"
+                        className="btn-block"
                         key={choices}
                         val={choices}
                         onClick={() => props.nextQuestion(choices)}

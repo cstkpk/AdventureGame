@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import { Row, Container } from 'react-bootstrap';
 import QA from "../data/questions.json";
+import Images from "../data/animations.json";
 import QADisplay from "../components/QADisplay";
 import Animation from "../components/Animation";
 import SpaceAPI from "../components/SpaceAPI";
+// import rocket1 from "../components/Animation/assets/rocket1.gif";
+import * as images from "../components/Animation/assets"
 
 class Home extends Component {
 
@@ -11,33 +14,35 @@ class Home extends Component {
         QA,
         question: QA[0].question,
         answerChoices: QA[0].choices,
-        chosen: ""
+        chosen: "",
+        image: images[0],
+        alt: Images[0].alt
     };
 
     nextQuestion = (choices) => {
         switch (choices) {
-            case "A": 
+            case "Immediately report it to the police?": 
                 this.setState({ 
                     question: QA[1].question,
                     answerChoices: QA[1].choices
                 });
                 break;
-            case "B":
+            case "Open it?":
                 this.setState({ 
                     question: QA[2].question,
                     answerChoices: QA[2].choices
                 });
                 break;
-            case "C":
-                this.setState({ 
-                    question: QA[3].question,
-                    answerChoices: QA[3].choices
-                    });
-                    break;
-            case "D":
+            case "Back to the beginning!":
                 this.setState({ 
                     question: QA[0].question,
                     answerChoices: QA[0].choices
+                    });
+                    break;
+            case "Next":
+                this.setState({ 
+                    question: QA[3].question,
+                    answerChoices: QA[3].choices
                     });
                     break;
             case "E":
@@ -80,7 +85,10 @@ class Home extends Component {
         return(
             <Container className="container-fluid">
                 <Row>
-                    <Animation />
+                    <Animation 
+                    image={this.state.image}
+                    alt={this.state.alt}
+                    />
                     <SpaceAPI />
                 </Row>
                 <Row>

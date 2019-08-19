@@ -1,18 +1,18 @@
 [
    {
         "id": 1,
-        "question": "A, B, or C?",
-        "choices": ["A", "B", "C"] 
+        "question": "Late last night, you heard a crash outside your bedroom window. You thought it was just part of your dream, but when you wake up and go outside, you find a mysterious package at your front door. Do you:",
+        "choices": ["Immediately report it to the police?", "Open it?"] 
    },
    {
         "id": 2,
-        "question": "D, E, or F?",
-        "choices": ["D", "E", "F"]
+        "question": "How lame! What adventures have you missed out on?",
+        "choices": ["Back to the beginning!"]
    },
    {
        "id": 3,
-       "question": "G, H, or I?",
-       "choices": ["G", "H", "I"]
+       "question": "Someone left you instructions for building your own rocket ship—how exciting! What a day this is turning out to be. After a few hours of careful construction, you’ve finally finished. When you step inside and turn on the guidance system, a message pops up: \n'Welcome! We’ve been waiting for you. This ship can take you anywhere you need to go. When you’ve finished your journey, find us at the last exit.'",
+       "choices": ["Next"]
    },
    {
        "id": 4,
