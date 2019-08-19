@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Row, Container } from 'react-bootstrap';
 import QA from "../data/questions.json";
-import Images from "../data/animations.json";
 import QADisplay from "../components/QADisplay";
 import Animation from "../components/Animation";
 import SpaceAPI from "../components/SpaceAPI";
@@ -15,8 +14,7 @@ class Home extends Component {
         question: QA[0].question,
         answerChoices: QA[0].choices,
         chosen: "",
-        image: images[0],
-        alt: Images[0].alt
+        image: images.rocket
     };
 
     nextQuestion = (choices) => {
