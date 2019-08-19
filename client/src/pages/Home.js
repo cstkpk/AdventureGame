@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { Row, Container } from 'react-bootstrap';
 import QA from "../data/questions.json";
-import QADisplay from "../components/QADisplay"
+import QADisplay from "../components/QADisplay";
+import Animation from "../components/Animation";
+import SpaceAPI from "../components/SpaceAPI";
 
 class Home extends Component {
 
@@ -75,14 +78,19 @@ class Home extends Component {
     
     render() {
         return(
-            <div>
-                <p>Testing 1 2 3!</p>
-                <QADisplay
-                question={this.state.question}
-                choices={this.state.answerChoices}
-                nextQuestion={this.nextQuestion}
-                />
-            </div>
+            <Container className="container-fluid">
+                <Row>
+                    <Animation />
+                    <SpaceAPI />
+                </Row>
+                <Row>
+                    <QADisplay
+                    question={this.state.question}
+                    choices={this.state.answerChoices}
+                    nextQuestion={this.nextQuestion}
+                    />
+                </Row>
+            </Container>
         );
     }
 
