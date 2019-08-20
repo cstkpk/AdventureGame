@@ -4,8 +4,8 @@ import QA from "../data/questions.json";
 import QADisplay from "../components/QADisplay";
 import Animation from "../components/Animation";
 import SpaceAPI from "../components/SpaceAPI";
-// import rocket1 from "../components/Animation/assets/rocket1.gif";
 import * as images from "../components/Animation/assets"
+import API from "../utils/API.js";
 
 class Home extends Component {
 
@@ -14,7 +14,8 @@ class Home extends Component {
         question: QA[0].question,
         answerChoices: QA[0].choices,
         chosen: "",
-        image: images.rocketEngine
+        image: images.rocketEngine,
+        result: {}
     };
 
     nextQuestion = (choices) => {
@@ -100,6 +101,7 @@ class Home extends Component {
                 });
                 break;
             case "Mercury":
+                this.searchBodies("mercury");
                 this.setState({
                     question: QA[12].question,
                     answerChoices: QA[12].choices
@@ -112,6 +114,7 @@ class Home extends Component {
                 });
                 break;
             case "Venus":
+                this.searchBodies("venus");
                 this.setState({
                     question: QA[14].question,
                     answerChoices: QA[14].choices
@@ -125,6 +128,7 @@ class Home extends Component {
                 });
                 break;
             case "Mars":
+                this.searchBodies("mars");
                 this.setState({
                     question: QA[16].question,
                     answerChoices: QA[16].choices
@@ -162,6 +166,16 @@ class Home extends Component {
                 alert("Whoops! Looks like I didn't add a case for that one...")
         }
     }
+
+    componentDidMount() {
+        this.searchBodies("moon");
+    };
+
+    searchBodies = query => {
+        API.search(query)
+        .then(res => this.setState({ result: res.data }))
+        .catch(err => console.log(err));
+    };
     
     render() {
         return(
@@ -171,7 +185,16 @@ class Home extends Component {
                     image={this.state.image}
                     alt={this.state.alt}
                     />
-                    <SpaceAPI />
+                    <SpaceAPI
+                        englishName={this.state.result.englishName}
+                        isPlanet={this.state.result.isPlanet}
+                        moons={this.state.result.moons ? (this.state.result.moons.length):("No Moons")}
+                        discoveredBy={this.state.result.discoveredBy}
+                        discoveryDate={this.state.result.discoveryDate}
+                        gravity={this.state.result.gravity}
+                        radius={this.state.result.equaRadius}
+                        satelliteOf="Earth"
+                    />
                 </Row>
                 <Row>
                     <QADisplay

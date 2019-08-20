@@ -1,16 +1,32 @@
 import React from "react";
 import { Card, Col } from 'react-bootstrap';
+import PlanetDetail from "../PlanetDetail";
+import MoonDetail from "../MoonDetail";
 
 function SpaceAPI (props) {
     return (
         <Col md={4}>
-            <Card>
-                <Card.Body>
-                    <Card.Title>This is where our space facts will go. Yay Sam!</Card.Title>
-                    <Card.Text>
-                        This is where we'll put all of our fun facts from the API.
-                    </Card.Text>
-                </Card.Body>
+            <Card heading={props.englishName}>
+                {props.isPlanet ? (
+                    <PlanetDetail
+                    englishName={props.englishName}
+                    moons={props.moons}
+                    discoveredBy={props.discoveredBy}
+                    discoveryDate={props.discoveryDate}
+                    gravity={props.gravity}
+                    radius={props.radius}
+                    />
+                ) : (
+                    <MoonDetail
+                    englishName={props.englishName}
+                    // satelliteOf={props.aroundPlanet ? (around) : ("not a satellite")}
+                    satelliteOf="Earth"
+                    discoveredBy={props.discoveredBy}
+                    discoveryDate={props.discoveryDate}
+                    gravity={props.gravity}
+                    radius={props.radius}
+                    />
+                )}
             </Card>
         </Col>
     );
