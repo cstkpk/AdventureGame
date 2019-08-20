@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { Row, Container, Form, Button } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
 import QA from "../data/questions.json";
 import QADisplay from "../components/QADisplay";
 import Animation from "../components/Animation";
 import SpaceAPI from "../components/SpaceAPI";
+import IntroForm from "../components/IntroForm";
 import * as images from "../components/Animation/assets"
 import API from "../utils/API.js";
 
@@ -17,15 +18,25 @@ class Home extends Component {
         image: images.rocketEngine,
         result: {},
         isHidden: true,
-        isHiddenForm: false
+        isHiddenForm: false,
+        playerName: ""
     };
 
-    toggleHidden = (event) => {
-        event.preventDefault();
-        this.setState({isHiddenForm: !this.state.isHiddenForm})
+    toggleHidden = () => {
+        // event.preventDefault();
+        this.setState({ isHiddenForm: !this.state.isHiddenForm })
         setTimeout( () => this.setState({
             isHidden: !this.state.isHidden
         }), 3000);
+        console.log(this.state.playerName);
+    }
+
+    handleInputChange = event => {
+        // console.log("event triggerd");
+        const { name, value } = event.target;
+        this.setState({
+          [name]: value
+        });
     }
 
     nextQuestion = (choices) => {
@@ -213,13 +224,12 @@ class Home extends Component {
                     nextQuestion={this.nextQuestion}
                     />
                 </Row>}
-                {!this.state.isHiddenForm && <Form>
-                    <Form.Group>
-                        <Form.Label>Enter your name:</Form.Label>
-                        <Form.Control type="text" placeholder="Your name"></Form.Control>
-                    </Form.Group>
-                    <Button type="submit" onClick={this.toggleHidden.bind(this)}>Begin</Button>
-                </Form>}
+                {!this.state.isHiddenForm && <IntroForm
+                toggleHidden={this.toggleHidden.bind(this)}
+                value={this.state.playerName}
+                name="playerName"
+                onChange={this.handleInputChange}
+                />}
             </Container>
         );
     }

@@ -8,7 +8,9 @@ function QADisplay(props) {
                 <Card.Body>
                     <Card.Text>
                     {props.question.map(paragraphs => (
-                        <p>{paragraphs}</p>
+                        <p
+                        key={paragraphs}
+                        >{paragraphs}</p>
                     ))}
                     </Card.Text>
                     <Card.Text>
