@@ -6,7 +6,11 @@ function QADisplay(props) {
         <Col md={12}>
             <Card>
                 <Card.Body>
-                    <Card.Title>{props.question}</Card.Title>
+                    <Card.Text>
+                    {props.question.map(paragraphs => (
+                        <p>{paragraphs}</p>
+                    ))}
+                    </Card.Text>
                     <Card.Text>
                         {props.choices.map(choices => (
                         <Button 

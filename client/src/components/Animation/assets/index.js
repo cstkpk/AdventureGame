@@ -1,5 +1,6 @@
 module.exports = {
-    rocket: require('./rocket1.gif')
+    rocket: require('./rocket1.gif'),
+    rocket2: require("./gifs/Ship_4_EngineAnimation.gif")
 }
 
 // module.exports = {
