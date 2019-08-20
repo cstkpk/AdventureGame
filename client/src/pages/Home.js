@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Container } from 'react-bootstrap';
+import { Row, Container, Form, Button } from 'react-bootstrap';
 import QA from "../data/questions.json";
 import QADisplay from "../components/QADisplay";
 import Animation from "../components/Animation";
@@ -15,8 +15,18 @@ class Home extends Component {
         answerChoices: QA[0].choices,
         chosen: "",
         image: images.rocketEngine,
-        result: {}
+        result: {},
+        isHidden: true,
+        isHiddenForm: false
     };
+
+    toggleHidden = (event) => {
+        event.preventDefault();
+        this.setState({isHiddenForm: !this.state.isHiddenForm})
+        setTimeout( () => this.setState({
+            isHidden: !this.state.isHidden
+        }), 3000);
+    }
 
     nextQuestion = (choices) => {
         switch (choices) {
@@ -181,11 +191,11 @@ class Home extends Component {
         return(
             <Container className="container-fluid">
                 <Row>
-                    <Animation 
+                    {!this.state.isHidden && <Animation 
                     image={this.state.image}
                     alt={this.state.alt}
-                    />
-                    <SpaceAPI
+                    />}
+                    {!this.state.isHidden && <SpaceAPI
                         englishName={this.state.result.englishName}
                         isPlanet={this.state.result.isPlanet}
                         moons={this.state.result.moons ? (this.state.result.moons.length):("No Moons")}
@@ -194,15 +204,22 @@ class Home extends Component {
                         gravity={this.state.result.gravity}
                         radius={this.state.result.equaRadius}
                         satelliteOf="Earth"
-                    />
+                    />}
                 </Row>
-                <Row>
+                {!this.state.isHidden && <Row>
                     <QADisplay
                     question={this.state.question}
                     choices={this.state.answerChoices}
                     nextQuestion={this.nextQuestion}
                     />
-                </Row>
+                </Row>}
+                {!this.state.isHiddenForm && <Form>
+                    <Form.Group>
+                        <Form.Label>Enter your name:</Form.Label>
+                        <Form.Control type="text" placeholder="Your name"></Form.Control>
+                    </Form.Group>
+                    <Button type="submit" onClick={this.toggleHidden.bind(this)}>Begin</Button>
+                </Form>}
             </Container>
         );
     }
