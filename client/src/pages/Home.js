@@ -29,6 +29,10 @@ class Home extends Component {
             isHidden: !this.state.isHidden
         }), 3000);
         console.log(this.state.playerName);
+        // let name = {name: this.state.playerName}
+        API.createPlayer({playerName: this.state.playerName})
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
     }
 
     handleInputChange = event => {
