@@ -8,7 +8,7 @@ function Animation(props) {
         <Col md={8}>
             <Card>
                 <Card.Body>
-                    <Card.Title className="text-center">This is our animation component! Yay Dan!</Card.Title>
+                    {/* <Card.Title className="text-center">This is our animation component! Yay Dan!</Card.Title> */}
                     <Card.Img variant="bottom" src={props.image} alt={props.alt}/> 
                 </Card.Body>
             </Card>

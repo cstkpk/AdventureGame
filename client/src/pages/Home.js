@@ -14,7 +14,7 @@ class Home extends Component {
         question: QA[0].question,
         answerChoices: QA[0].choices,
         chosen: "",
-        image: images.rocket
+        image: images.rocketEngine
     };
 
     nextQuestion = (choices) => {
@@ -28,27 +28,29 @@ class Home extends Component {
             case "Immediately report it to the police?": 
                 this.setState({ 
                     question: QA[1].question,
-                    answerChoices: QA[1].choices,
-                    image: images.rocket2
+                    answerChoices: QA[1].choices
                 });
                 break;
             case "Open it?":
                 this.setState({ 
                     question: QA[2].question,
-                    answerChoices: QA[2].choices
+                    answerChoices: QA[2].choices,
+                    image: images.interiorPowerOn
                 });
                 break;
             case "Next":
                 this.setState({ 
                     question: QA[3].question,
-                    answerChoices: QA[3].choices
+                    answerChoices: QA[3].choices,
+                    image: images.rocketEngine
                     });
                     break;
             case "You completely forgot!":
             case "You never leave home without a sandwich. But it’s missing a little something…":
                 this.setState({ 
                     question: QA[4].question,
-                    answerChoices: QA[4].choices
+                    answerChoices: QA[4].choices,
+                    image: images.moonLanding
                     });
                     break;
             case "The moon isn’t made out of cheese!":
@@ -118,7 +120,8 @@ class Home extends Component {
             case "Continue to the surface! Any discovery is worth it.":
                 this.setState({
                     question: QA[15].question,
-                    answerChoices: QA[15].choices
+                    answerChoices: QA[15].choices,
+                    image: images.rocketExplode
                 });
                 break;
             case "Mars":
