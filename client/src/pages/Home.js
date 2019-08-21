@@ -90,6 +90,7 @@ class Home extends Component {
                     answerChoices: QA[4].choices,
                     // image: images.moonLanding
                     });
+                    this.searchBodies("moon");
                     break;
             case "The moon isn’t made out of cheese!":
                 this.setState({ 
@@ -266,7 +267,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        this.searchBodies("moon");
+        this.searchBodies("earth");
     };
 
     searchBodies = query => {
