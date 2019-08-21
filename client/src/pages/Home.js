@@ -7,7 +7,7 @@ import SpaceAPI from "../components/SpaceAPI";
 import IntroForm from "../components/IntroForm";
 import * as images from "../components/Animation/assets"
 import API from "../utils/API.js";
-// import "./Home.css";
+import "./Home.css";
 
 class Home extends Component {
 
@@ -47,9 +47,9 @@ class Home extends Component {
     }
 
     nextQuestion = (choices) => {
-        console.log(choices);
+        // console.log(choices);
         var currentID = JSON.parse(sessionStorage.getItem("playerID"));
-        console.log(currentID);
+        // console.log(currentID);
         API.updatePlayer(currentID, {playerChoices: choices})
             .then(res => {
                 console.log(res.data.playerChoices);
@@ -277,7 +277,7 @@ class Home extends Component {
     
     render() {
         return(
-            <Container className="container-fluid">
+            <Container fluid={true}>
                 <div id='stars'></div>
                 <div id='stars2'></div>
                 <div id='stars3'></div>

@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 
 function IntroForm (props) {
     return (
-        <div>
+        <div id={props.id}>
             <Form>
                 <Form.Group>
                     <Form.Label>Enter your name:</Form.Label>

@@ -4,6 +4,10 @@ html {
     background: black;
     overflow: auto;
   }
+
+  body {
+    background-color: black;
+  }
   
   #stars {
     width: 1px;
@@ -71,7 +75,7 @@ html {
     padding-left: 10px;
   }
   #intro-form {
-      color: black;
+      background-color: white;
       margin-top: 50px;
   }
   /* #title span {
