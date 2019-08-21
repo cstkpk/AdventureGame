@@ -143,5 +143,35 @@
        "id": 29,
        "question": ["After a long day of space travel, you’re ready to go home. Just before you send the ship back toward Earth, you realize that something is still bothering you: what is the last exit, and who is waiting for you? You turn to the computer and say:"],
        "choices": ["'I’ve made it this far. Just take me home!'", "'I still have to complete my mission.'"]
+   },
+   {
+       "id": 30,
+       "question": ["'And complete your mission you shall!' shouts the computer. 'We have enough fuel for one more stop. Where should we go?'"],
+       "choices": ["Neptune", "Pluto"]
+   },
+   {
+       "id": 31,
+       "question": ["Welcome to Neptune, the smallest of the gas giants! Similar to Jupiter’s 'Great Red Spot,' Neptune has a 'Great Dark Spot.' It’s a huge, rotating storm system with wind speeds up to 2,100 kilometers per hour. To this day, no one quite knows how its wind speeds got that fast. Realizing that your ship is almost out of fuel, you take satisfaction in your day of incredible space travel and head back home."],
+       "choices": ["Maybe we take you to the results page now?"]
+   },
+   {
+       "id": 32,
+       "question": ["As you fly nearer to the surface of this beloved dwarf planet, you see an odd structure poking above the horizon.", "'What could this possibly be?' you wonder.", "Do you:"],
+       "choices": ["Land nearby and check it out.", "Get out of there while you still have your skin."]
+   },
+   {
+       "id": 33,
+       "question": ["As you land, a few tall, blue creatures appear outside of the ship. They summon you, and even though you feel afraid, you appear to no longer be in control of your body. It’s as if it were walking on its own!", "'We knew you would come,' they say in unison. 'Prophecy told of an Earth child who would bring us the final ingredients for our grand experiment. Did you succeed?'"],
+       "choices": ["Yes! You have exactly what they need.", "You’re not sure what they’re talking about…"]
+   },
+   {
+       "id": 34,
+       "question": ["'That is okay, Earth child,' chant the blue people. 'We are still impressed with your courage, and we would like to thank you by transporting you safely back home.'"],
+       "choices": ["There's no place like home!"]
+   },
+   {
+       "id": 35,
+       "question": ["'You are our savior!' chant the blue people. 'You have brought us the final pieces we need to finish our device for deep space travel. Would you like to come with us, or would you like to return home?'"],
+       "choices": ["This was great, but please take me home!", "I’m ready for more!"]
    }
 ]

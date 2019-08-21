@@ -6,7 +6,7 @@ function IntroForm (props) {
         <div id={props.id}>
             <Form>
                 <Form.Group>
-                    <Form.Label>Enter your name:</Form.Label>
+                    <Form.Label text="white">Enter your name:</Form.Label>
                     <Form.Control 
                     type="text" 
                     placeholder="Your name"

@@ -80,17 +80,17 @@ class Home extends Component {
                 this.setState({ 
                     question: QA[3].question,
                     answerChoices: QA[3].choices,
-                    image: images.rocketEngine
+                    // image: images.rocketEngine
                     });
                     break;
             case "You completely forgot!":
             case "You never leave home without a sandwich. But it’s missing a little something…":
+                this.searchBodies("moon");
                 this.setState({ 
                     question: QA[4].question,
                     answerChoices: QA[4].choices,
                     // image: images.moonLanding
                     });
-                    this.searchBodies("moon");
                     break;
             case "The moon isn’t made out of cheese!":
                 this.setState({ 
@@ -252,6 +252,42 @@ class Home extends Component {
                 this.setState({
                     question: QA[28].question,
                     answerChoices: QA[28].choices
+                });
+                break;
+            case "'I still have to complete my mission.'":
+                this.setState({
+                    question: QA[29].question,
+                    answerChoices: QA[29].choices
+                });
+                break;
+            case "Neptune":
+                this.setState({
+                    question: QA[30].question,
+                    answerChoices: QA[30].choices
+                });
+                break;
+            case "Pluto":
+                this.setState({
+                    question: QA[31].question,
+                    answerChoices: QA[31].choices
+                });
+                break;
+            case "Land nearby and check it out.":
+                this.setState({
+                    question: QA[32].question,
+                    answerChoices: QA[32].choices
+                });
+                break;
+            case "":
+                this.setState({
+                    question: QA[33].question,
+                    answerChoices: QA[33].choices
+                });
+                break;
+            case "":
+                this.setState({
+                    question: QA[34].question,
+                    answerChoices: QA[34].choices
                 });
                 break;
             case "":
