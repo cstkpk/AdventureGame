@@ -5,7 +5,7 @@ import { Card, Col } from 'react-bootstrap';
 function Animation(props) {
 
     return (
-        <Col md={8}>
+        <Col md={{span: 6, offset: 1}}>
             <Card>
                 <Card.Body>
                     {/* <Card.Title className="text-center">This is our animation component! Yay Dan!</Card.Title> */}

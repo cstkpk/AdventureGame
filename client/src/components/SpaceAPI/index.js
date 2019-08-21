@@ -5,7 +5,7 @@ import MoonDetail from "../MoonDetail";
 
 function SpaceAPI (props) {
     return (
-        <Col md={4}>
+        <Col md={{span: 4}}>
             <Card heading={props.englishName}>
                 {props.isPlanet ? (
                     <PlanetDetail

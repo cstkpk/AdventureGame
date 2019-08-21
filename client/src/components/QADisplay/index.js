@@ -3,8 +3,8 @@ import { Button, Card, Col } from 'react-bootstrap';
 
 function QADisplay(props) {
     return (
-        <Col md={12}>
-            <Card>
+        <Col md={{span: 10, offset: 1}}>
+            <Card className="mt-4">
                 <Card.Body>
                     <Card.Text>
                     {props.question.map(paragraphs => (
