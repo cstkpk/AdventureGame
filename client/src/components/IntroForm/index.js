@@ -15,14 +15,13 @@ function IntroForm (props) {
                     onChange={props.onChange}
                     />
                 </Form.Group>
-            </Form>
             <Button 
             type="submit" 
-            onClick={() => props.toggleHidden()}
-
+            onClick={(event) => props.toggleHidden(event)}
             >
             Begin
             </Button>
+            </Form>
         </div>
     );
 };

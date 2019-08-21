@@ -23,8 +23,8 @@ class Home extends Component {
         playerName: ""
     };
 
-    toggleHidden = () => {
-        // event.preventDefault();
+    toggleHidden = (event) => {
+        event.preventDefault();
         this.setState({ isHiddenForm: !this.state.isHiddenForm })
         setTimeout( () => this.setState({
             isHidden: !this.state.isHidden
