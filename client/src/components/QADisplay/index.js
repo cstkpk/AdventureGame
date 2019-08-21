@@ -4,7 +4,7 @@ import { Button, Card, Col } from 'react-bootstrap';
 function QADisplay(props) {
     return (
         <Col md={{span: 10, offset: 1}}>
-            <Card className="mt-4">
+            <Card className="mt-4" text="white" bg="transparent">
                 <Card.Body>
                     <Card.Text>
                     {props.question.map(paragraphs => (
@@ -16,7 +16,7 @@ function QADisplay(props) {
                     <Card.Text>
                         {props.choices.map(choices => (
                         <Button 
-                        variant="outline-dark"
+                        variant="outline-light"
                         className="btn-block"
                         key={choices}
                         val={choices}
