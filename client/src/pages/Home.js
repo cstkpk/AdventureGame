@@ -7,6 +7,7 @@ import SpaceAPI from "../components/SpaceAPI";
 import IntroForm from "../components/IntroForm";
 import * as images from "../components/Animation/assets"
 import API from "../utils/API.js";
+// import "./Home.css";
 
 class Home extends Component {
 
@@ -29,7 +30,6 @@ class Home extends Component {
             isHidden: !this.state.isHidden
         }), 3000);
         console.log(this.state.playerName);
-        // let name = {name: this.state.playerName}
         API.createPlayer({playerName: this.state.playerName})
             .then(res => console.log(res))
             .catch(err => console.log(err));
@@ -52,6 +52,7 @@ class Home extends Component {
                     });
                     break;
             case "Immediately report it to the police?": 
+            case "No!":
                 this.setState({ 
                     question: QA[1].question,
                     answerChoices: QA[1].choices
@@ -146,6 +147,7 @@ class Home extends Component {
                 });
                 break;
             case "Continue to the surface! Any discovery is worth it.":
+            case "Yes! Take me to the storm.":
                 this.setState({
                     question: QA[15].question,
                     answerChoices: QA[15].choices,
@@ -180,6 +182,63 @@ class Home extends Component {
                     answerChoices: QA[19].choices
                 });
                 break;
+            case "Jupiter":
+                this.setState({
+                    question: QA[20].question,
+                    answerChoices: QA[20].choices
+                });
+                break;
+            case "Head to the surface!":
+                this.setState({
+                    question: QA[21].question,
+                    answerChoices: QA[21].choices
+                });
+                break;
+            case "Stay in the outermost part of the atmosphere.":
+                this.setState({
+                    question: QA[22].question,
+                    answerChoices: QA[22].choices
+                });
+                break;
+            case "No way! That seems dangerous.":
+                this.setState({
+                    question: QA[23].question,
+                    answerChoices: QA[23].choices
+                });
+                break;
+            case "Saturn":
+                this.setState({
+                    question: QA[24].question,
+                    answerChoices: QA[24].choices
+                });
+                break;
+            case "Send the ship through the ring system to get a closer look at the atmosphere.":
+                this.setState({
+                    question: QA[25].question,
+                    answerChoices: QA[25].choices
+                });
+                break;
+            case "Uranus":
+                this.setState({
+                    question: QA[26].question,
+                    answerChoices: QA[26].choices
+                });
+                break;
+            case "Absolutely! Take me to the surface!":
+                this.setState({
+                    question: QA[27].question,
+                    answerChoices: QA[27].choices
+                });
+                break;
+            case "Yes!":
+            case "Observe from a distance.":
+            case "Now your curiosity is really kicking into gear. Who has sent you on this mission?":
+            case "We’re so far from home… and I don’t think that’s safe.":
+                this.setState({
+                    question: QA[28].question,
+                    answerChoices: QA[28].choices
+                });
+                break;
             case "":
                 this.setState({
                     question: QA[0].question,
@@ -205,6 +264,9 @@ class Home extends Component {
     render() {
         return(
             <Container className="container-fluid">
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
                 <Row>
                     {!this.state.isHidden && <Animation 
                     image={this.state.image}
@@ -233,7 +295,9 @@ class Home extends Component {
                 value={this.state.playerName}
                 name="playerName"
                 onChange={this.handleInputChange}
+                // id="intro-form"
                 />}
+                {/* <p id="title">I am a space man</p> */}
             </Container>
         );
     }

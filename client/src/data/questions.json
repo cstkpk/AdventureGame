@@ -98,5 +98,50 @@
        "id": 20,
        "question": ["Having had a great time exploring a new planet, you get back onto the ship. You’re still wondering about who left you that package and what they want from you, so you decide to continue traveling through space. Maybe you’ll find answers there. You boot up the computer and ask it to take you to:"],
        "choices": ["Jupiter", "Saturn", "Uranus"]
+   },
+   {
+       "id": 21,
+       "question": ["Welcome to Jupiter! Jupiter is so large that it’s two and a half times more massive than all of the other planets in the solar system combined. While its interior is made of rock, metal, and hydrogen compounds, it has a massive atmosphere that you have to get through first. This is why it’s known as a “gas giant”! As you near closer, you tell the ship to:"],
+       "choices": ["Stay in the outermost part of the atmosphere.", "Head to the surface!"]
+   },
+   {
+        "id": 22,
+        "question": ["Oh no! Jupiter has no surface—it’s made entirely of gas! Its “surface” is just the base of its atmosphere. The pressure becomes too much and the ship starts to break apart. I guess this is how it ends…"],
+        "choices": ["Maybe we take you to the results page now?"]
+   },
+   {
+       "id": 23,
+       "question": ["You eventually pass over the Great Red Spot, the famous storm that has been raging at least since 1830. Some people think it might be as old as three and a half centuries! One big mystery is what makes the red spot red… is today the day you find out?"],
+       "choices": ["Yes! Take me to the storm.", "No way! That seems dangerous."]
+   },
+   {
+       "id": 24,
+       "question": ["Dangerous indeed! Good thinking on that one. You’ve just avoided certain death. Do you want to continue on your space travels?"],
+       "choices": ["Yes!", "No!"]
+   },
+   {
+       "id": 25,
+       "question": ["Welcome to Saturn! Best known for its enormous ring system, Saturn is mainly composed of gases, including hydrogen, helium, and methane. Its rings are made mostly of chunks of ice and dust. While these rings stretch out more than 120,700 km from the planet, they’re only about 20 meters thick. You notice that all of that ice and dust moves fast! Do you:"],
+       "choices": ["Send the ship through the ring system to get a closer look at the atmosphere", "Observe from a distance"]
+   },
+   {
+       "id": 26,
+       "question": ["As you’re passing through the rings, you notice an oddly shaped piece of ice a few meters away from the ship. It seems dangerous, but an instinct tells you that you have to examine it. Luckily, this ship has a sophisticated hydraulic arm system that you can use to grab objects. You send it to retrieve the chunk of ice, and when you bring it inside, you realize it’s not a chunk of ice at all but a box with a note attached! The note reads:", "You’ve found a clue! Take this box with you back to the ship. It contains a special mineral that we need to finish our secret project… Please keep it safe and bring it to us!"],
+       "choices": ["Now your curiosity is really kicking into gear. Who has sent you on this mission?"]
+   },
+   {
+       "id": 27,
+       "question": ["Welcome to Uranus! You see something odd upon approaching the planet: it appears to be rotating on its side! It turns out that its axis of spin is tilted by 98 degrees, making it appear to be sideways relative to the other planets. How interesting! The computer asks if you’d like to get a closer look, and you say:"],
+       "choices": ["Absolutely! Take me to the surface!", "We’re so far from home… and I don’t think that’s safe."]
+   },
+   {
+       "id": 28,
+       "question": ["What you didn’t know is that Uranus has the coldest temperatures of any planet in our solar system. At its coldest, temperatures drop to -224º C! On a related note, the ship’s engines immediately freeze over and stall out. I guess this is how it ends…"],
+       "choices": ["Maybe we take you to the results page now?"]
+   },
+   {
+       "id": 29,
+       "question": ["After a long day of space travel, you’re ready to go home. Just before you send the ship back toward Earth, you realize that something is still bothering you: what is the last exit, and who is waiting for you? You turn to the computer and say:"],
+       "choices": ["'I’ve made it this far. Just take me home!'", "'I still have to complete my mission.'"]
    }
 ]
