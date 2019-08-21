@@ -4,15 +4,16 @@ const db = require("../models/story.js");
 module.exports = {
     create: function(req, res) {
         console.log(req.body);
-        console.log(req.params);
+        // console.log(req.params);
         db
             .create(req.body)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },
     update: function(req, res) {
+        console.log(req.body);
         db
-            .findOneAndUpdate({ _id: req.params.id}, req.body)
+            .findOneAndUpdate({ _id: req.params.id}, {$push: req.body})
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },

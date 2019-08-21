@@ -5,6 +5,10 @@ const storySchema = new Schema({
     playerName: { 
         type: String,
         required: true
+    },
+    playerChoices: {
+        type: Array
+        // type: [ String ]
     }
 });
 

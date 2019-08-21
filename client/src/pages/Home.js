@@ -15,7 +15,7 @@ class Home extends Component {
         QA,
         question: QA[0].question,
         answerChoices: QA[0].choices,
-        chosen: "",
+        // chosen: "",
         image: images.rocketEngine,
         result: {},
         isHidden: true,
@@ -47,6 +47,14 @@ class Home extends Component {
     }
 
     nextQuestion = (choices) => {
+        console.log(choices);
+        var currentID = JSON.parse(sessionStorage.getItem("playerID"));
+        console.log(currentID);
+        API.updatePlayer(currentID, {playerChoices: choices})
+            .then(res => {
+                console.log(res.data.playerChoices);
+            })
+            .catch(err => console.log(err));
         switch (choices) {
             case "Back to the beginning!":
                 this.setState({ 

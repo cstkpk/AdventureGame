@@ -11,7 +11,9 @@ export default {
   getPlayer: function(id) {
     return axios.get("/api/story/" + id);
   },
-  updatePlayer: function(id) {
-    return axios.put("/api/story/" + id);
+  updatePlayer: function(id, data) {
+    // console.log(`ID: ${id}`);
+    // console.log(data);
+    return axios.put("/api/story/" + id, data);
   }
 };
