@@ -31,7 +31,10 @@ class Home extends Component {
         }), 3000);
         console.log(this.state.playerName);
         API.createPlayer({playerName: this.state.playerName})
-            .then(res => console.log(res))
+            .then(res => {
+                console.log(res.data._id);
+                sessionStorage.setItem("playerID", JSON.stringify(res.data._id));
+            })
             .catch(err => console.log(err));
     }
 
