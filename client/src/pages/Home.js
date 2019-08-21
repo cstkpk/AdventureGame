@@ -183,6 +183,7 @@ class Home extends Component {
                 });
                 break;
             case "Jupiter":
+                this.searchBodies("jupiter");
                 this.setState({
                     question: QA[20].question,
                     answerChoices: QA[20].choices
@@ -207,6 +208,7 @@ class Home extends Component {
                 });
                 break;
             case "Saturn":
+                this.searchBodies("saturn");
                 this.setState({
                     question: QA[24].question,
                     answerChoices: QA[24].choices
@@ -219,6 +221,7 @@ class Home extends Component {
                 });
                 break;
             case "Uranus":
+                this.searchBodies("uranus");
                 this.setState({
                     question: QA[26].question,
                     answerChoices: QA[26].choices
