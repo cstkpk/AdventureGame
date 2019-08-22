@@ -106,8 +106,8 @@
    },
    {
         "id": 22,
-        "question": ["Oh no! Jupiter has no surface—it’s made entirely of gas! Its “surface” is just the base of its atmosphere. The pressure becomes too much and the ship starts to break apart. I guess this is how it ends…"],
-        "choices": ["Maybe we take you to the results page now?"]
+        "question": ["Oh no! Jupiter has no surface—it’s made entirely of gas! Its “surface” is just the base of its atmosphere. Luckily, the computer sounds the alarm and keeps you safely in the outermost part of the atmosphere."],
+        "choices": ["Keep exploring Jupiter!"]
    },
    {
        "id": 23,

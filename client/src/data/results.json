@@ -1,0 +1,12 @@
+[
+    {
+        "id": 0,
+        "type": "Beginning",
+        "text": "Earlier today, you found a mysterious package at your doorstep. You opened it up, and inside were instructions for building your own rocket ship! You masterfully constructed the ship, and when you climbed aboard and booted up the computer, a message flashed across the screen, welcoming you to your mission. Then, before you could think, the engines fired up and the ship took off! What an exciting start to your day!"
+    },
+    {
+        "id": 1,
+        "type": "No moon",
+        "text": "The rocket ship was taking you to the moon! It joked about the moon being made of cheese, which you didn't think was very funny. It even tried to placate you by sharing a parable about why people say the moon is made of cheese, but it seems that you woke up on the wrong side of the bed today... and you decided that you only wanted to visit the moon if it were made of cheese. So the ship took you home. What a way to end an adventure before it begins!"
+    }
+]

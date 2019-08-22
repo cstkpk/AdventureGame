@@ -135,7 +135,10 @@ class Home extends Component {
                     question: QA[7].question,
                     answerChoices: QA[7].choices
                     });
-                    break;
+                API.updatePlayer(currentID, {moon: true})
+                .then(res => console.log(res.data.moon))
+                .catch(err => console.log(err));
+                break;
             case "Call your parents to tell them about this amazing adventure!":
                 this.setState({
                     question: QA[8].question,
@@ -169,6 +172,9 @@ class Home extends Component {
                     question: QA[12].question,
                     answerChoices: QA[12].choices
                 });
+                API.updatePlayer(currentID, {mercury: true})
+                .then(res => console.log(res.data.mercury))
+                .catch(err => console.log(err));
                 break;
             case "Your curiosity is too strong! You pull it out of the ground.":
                 this.setState({
@@ -188,6 +194,9 @@ class Home extends Component {
                     question: QA[14].question,
                     answerChoices: QA[14].choices
                 });
+                API.updatePlayer(currentID, {venus: true})
+                .then(res => console.log(res.data.venus))
+                .catch(err => console.log(err));
                 break;
             case "Continue to the surface! Any discovery is worth it.":
             case "Yes! Take me to the storm.":
@@ -196,6 +205,9 @@ class Home extends Component {
                     answerChoices: QA[15].choices,
                     // image: images.rocketExplode
                 });
+                API.updatePlayer(currentID, {shipDestruction: true})
+                .then(res => console.log(res.data.shipDestruction))
+                .catch(err => console.log(err));
                 break;
             case "Mars":
                 this.searchBodies("mars");
@@ -203,12 +215,18 @@ class Home extends Component {
                     question: QA[16].question,
                     answerChoices: QA[16].choices
                 });
+                API.updatePlayer(currentID, {mars: true})
+                .then(res => console.log(res.data.mars))
+                .catch(err => console.log(err));
                 break;
             case "East":
                 this.setState({
                     question: QA[17].question,
                     answerChoices: QA[17].choices
                 });
+                API.updatePlayer(currentID, {dustStorm: true})
+                .then(res => console.log(res.data.dustStorm))
+                .catch(err => console.log(err));
                 break;
             case "West":
                 this.setState({
@@ -231,6 +249,9 @@ class Home extends Component {
                     question: QA[20].question,
                     answerChoices: QA[20].choices
                 });
+                API.updatePlayer(currentID, {jupiter: true})
+                .then(res => console.log(res.data.jupiter))
+                .catch(err => console.log(err));
                 break;
             case "Head to the surface!":
                 this.setState({
@@ -239,6 +260,7 @@ class Home extends Component {
                 });
                 break;
             case "Stay in the outermost part of the atmosphere.":
+            case "Keep exploring Jupiter!":
                 this.setState({
                     question: QA[22].question,
                     answerChoices: QA[22].choices
@@ -256,6 +278,9 @@ class Home extends Component {
                     question: QA[24].question,
                     answerChoices: QA[24].choices
                 });
+                API.updatePlayer(currentID, {saturn: true})
+                .then(res => console.log(res.data.saturn))
+                .catch(err => console.log(err));
                 break;
             case "Send the ship through the ring system to get a closer look at the atmosphere.":
                 this.setState({
@@ -275,12 +300,18 @@ class Home extends Component {
                     question: QA[26].question,
                     answerChoices: QA[26].choices
                 });
+                API.updatePlayer(currentID, {uranus: true})
+                .then(res => console.log(res.data.uranus))
+                .catch(err => console.log(err));
                 break;
             case "Absolutely! Take me to the surface!":
                 this.setState({
                     question: QA[27].question,
                     answerChoices: QA[27].choices
                 });
+                API.updatePlayer(currentID, {freeze: true})
+                .then(res => console.log(res.data.freeze))
+                .catch(err => console.log(err));
                 break;
             case "Yes!":
             case "Observe from a distance.":
@@ -302,18 +333,27 @@ class Home extends Component {
                     question: QA[30].question,
                     answerChoices: QA[30].choices
                 });
+                API.updatePlayer(currentID, {neptune: true})
+                .then(res => console.log(res.data.neptune))
+                .catch(err => console.log(err));
                 break;
             case "Pluto":
                 this.setState({
                     question: QA[31].question,
                     answerChoices: QA[31].choices
                 });
+                API.updatePlayer(currentID, {pluto: true})
+                .then(res => console.log(res.data.pluto))
+                .catch(err => console.log(err));
                 break;
             case "Land nearby and check it out.":
                 this.setState({
                     question: QA[32].question,
                     answerChoices: QA[32].choices
                 });
+                API.updatePlayer(currentID, {land: true})
+                .then(res => console.log(res.data.land))
+                .catch(err => console.log(err));
                 break;
             case "Yes! You have exactly what they need.":
             case "You’re not sure what they’re talking about…":
@@ -338,6 +378,7 @@ class Home extends Component {
             case "There's no place like home!":
             case "This was great, but please take me home!":
             case "I’m ready for more!":
+            case "Get out of there while you still have your skin.":
                 window.location.href = window.location + "results";
                 break;
             default:
