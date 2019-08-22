@@ -80,8 +80,8 @@ class Home extends Component {
                 this.setState({ 
                     question: QA[0].question,
                     answerChoices: QA[0].choices
-                    });
-                    break;
+                });
+                break;
             case "Immediately report it to the police?": 
             case "No!":
                 this.setState({ 
@@ -106,35 +106,38 @@ class Home extends Component {
                     question: QA[3].question,
                     answerChoices: QA[3].choices,
                     // image: images.rocketEngine
-                    });
-                    break;
+                });
+                break;
             case "You completely forgot!":
             case "You never leave home without a sandwich. But it’s missing a little something…":
                 this.searchBodies("moon");
                 this.setState({ 
                     question: QA[4].question,
                     answerChoices: QA[4].choices,
-                    // image: images.moonLanding
-                    });
-                    break;
+                    image: images.approachMoon.image,
+                    alt: images.approachMoon.alt
+                });
+                break;
             case "The moon isn’t made out of cheese!":
                 this.setState({ 
                     question: QA[5].question,
                     answerChoices: QA[5].choices
                     });
-                    break;
+                break;
             case "No thank you. I only want to go if there’s cheese.":
                 this.setState({ 
                     question: QA[6].question,
                     answerChoices: QA[6].choices
-                    });
-                    break;
+                });
+                break;
             case "Can we please land? I’ve always wanted to moonwalk!":
             case "I do wish there were cheese… but let’s go!":
                 this.setState({ 
                     question: QA[7].question,
-                    answerChoices: QA[7].choices
-                    });
+                    answerChoices: QA[7].choices,
+                    image: images.moonLanding.image,
+                    alt: images.moonLanding.alt
+                });
                 API.updatePlayer(currentID, {moon: true})
                 .then(res => console.log(res.data.moon))
                 .catch(err => console.log(err));
@@ -150,8 +153,8 @@ class Home extends Component {
                 this.setState({ 
                     question: QA[9].question,
                     answerChoices: QA[9].choices
-                    });
-                    break;
+                });
+                break;
             case "You ignore the warning and go outside anyway.":
                 this.setState({
                     question: QA[10].question,
@@ -170,7 +173,9 @@ class Home extends Component {
                 this.searchBodies("mercury");
                 this.setState({
                     question: QA[12].question,
-                    answerChoices: QA[12].choices
+                    answerChoices: QA[12].choices,
+                    image: images.mercuryLanding.image,
+                    alt: images.mercuryLanding.alt
                 });
                 API.updatePlayer(currentID, {mercury: true})
                 .then(res => console.log(res.data.mercury))
@@ -192,7 +197,9 @@ class Home extends Component {
                 this.searchBodies("venus");
                 this.setState({
                     question: QA[14].question,
-                    answerChoices: QA[14].choices
+                    answerChoices: QA[14].choices,
+                    image: images.approachVenus.image,
+                    alt: images.approachVenus.alt
                 });
                 API.updatePlayer(currentID, {venus: true})
                 .then(res => console.log(res.data.venus))
@@ -203,7 +210,8 @@ class Home extends Component {
                 this.setState({
                     question: QA[15].question,
                     answerChoices: QA[15].choices,
-                    // image: images.rocketExplode
+                    image: images.shipExplode.image,
+                    alt: images.shipExplode.alt
                 });
                 API.updatePlayer(currentID, {shipDestruction: true})
                 .then(res => console.log(res.data.shipDestruction))
@@ -213,7 +221,9 @@ class Home extends Component {
                 this.searchBodies("mars");
                 this.setState({
                     question: QA[16].question,
-                    answerChoices: QA[16].choices
+                    answerChoices: QA[16].choices,
+                    image: images.approachMars.image,
+                    alt: images.approachMars.alt
                 });
                 API.updatePlayer(currentID, {mars: true})
                 .then(res => console.log(res.data.mars))
@@ -222,7 +232,9 @@ class Home extends Component {
             case "East":
                 this.setState({
                     question: QA[17].question,
-                    answerChoices: QA[17].choices
+                    answerChoices: QA[17].choices,
+                    image: images.marsSurface.image,
+                    alt: images.marsSurface.alt
                 });
                 API.updatePlayer(currentID, {dustStorm: true})
                 .then(res => console.log(res.data.dustStorm))
@@ -231,7 +243,9 @@ class Home extends Component {
             case "West":
                 this.setState({
                     question: QA[18].question,
-                    answerChoices: QA[18].choices
+                    answerChoices: QA[18].choices,
+                    image: images.marsSurface.image,
+                    alt: images.marsSurface.alt
                 });
                 break;
             case "You have no idea what could be lurking beneath the surface. Best leave that alone.":
@@ -247,7 +261,9 @@ class Home extends Component {
                 this.searchBodies("jupiter");
                 this.setState({
                     question: QA[20].question,
-                    answerChoices: QA[20].choices
+                    answerChoices: QA[20].choices,
+                    image: images.approachJupiter.image,
+                    alt: images.approachJupiter.alt
                 });
                 API.updatePlayer(currentID, {jupiter: true})
                 .then(res => console.log(res.data.jupiter))
@@ -276,7 +292,9 @@ class Home extends Component {
                 this.searchBodies("saturn");
                 this.setState({
                     question: QA[24].question,
-                    answerChoices: QA[24].choices
+                    answerChoices: QA[24].choices,
+                    image: images.approachSaturn.image,
+                    alt: images.approachSaturn.alt
                 });
                 API.updatePlayer(currentID, {saturn: true})
                 .then(res => console.log(res.data.saturn))
@@ -298,7 +316,9 @@ class Home extends Component {
                 this.searchBodies("uranus");
                 this.setState({
                     question: QA[26].question,
-                    answerChoices: QA[26].choices
+                    answerChoices: QA[26].choices,
+                    image: images.approachUranus.image,
+                    alt: images.approachUranus.alt
                 });
                 API.updatePlayer(currentID, {uranus: true})
                 .then(res => console.log(res.data.uranus))
@@ -307,7 +327,9 @@ class Home extends Component {
             case "Absolutely! Take me to the surface!":
                 this.setState({
                     question: QA[27].question,
-                    answerChoices: QA[27].choices
+                    answerChoices: QA[27].choices,
+                    image: images.shipExplode.image,
+                    alt: images.shipExplode.alt
                 });
                 API.updatePlayer(currentID, {freeze: true})
                 .then(res => console.log(res.data.freeze))
@@ -332,7 +354,9 @@ class Home extends Component {
                 this.searchBodies("neptune");
                 this.setState({
                     question: QA[30].question,
-                    answerChoices: QA[30].choices
+                    answerChoices: QA[30].choices,
+                    image: images.approachNeptune.image,
+                    alt: images.approachNeptune.alt
                 });
                 API.updatePlayer(currentID, {neptune: true})
                 .then(res => console.log(res.data.neptune))
@@ -342,7 +366,9 @@ class Home extends Component {
                 this.searchBodies("pluto");
                 this.setState({
                     question: QA[31].question,
-                    answerChoices: QA[31].choices
+                    answerChoices: QA[31].choices,
+                    image: images.approachPluto.image,
+                    alt: images.approachPluto.alt
                 });
                 API.updatePlayer(currentID, {pluto: true})
                 .then(res => console.log(res.data.pluto))
@@ -351,7 +377,9 @@ class Home extends Component {
             case "Land nearby and check it out.":
                 this.setState({
                     question: QA[32].question,
-                    answerChoices: QA[32].choices
+                    answerChoices: QA[32].choices,
+                    image: images.plutoSurface.image,
+                    alt: images.plutoSurface.alt
                 });
                 API.updatePlayer(currentID, {land: true})
                 .then(res => console.log(res.data.land))
@@ -446,7 +474,6 @@ class Home extends Component {
             </Container>
         );
     }
-
 };
 
 export default Home;
