@@ -315,6 +315,12 @@ class Home extends Component {
                 })
                 .catch(err => console.log(err));
                 break;
+            case "Maybe we take you to the results page now?":
+            case "There's no place like home!":
+            case "This was great, but please take me home!":
+            case "I’m ready for more!":
+                window.location.href = window.location + "/results";
+                break;
             default:
                 console.log("ERRRROROROROR");
                 alert("Whoops! Looks like I didn't add a case for that one...")
