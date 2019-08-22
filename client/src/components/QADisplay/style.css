@@ -1,0 +1,10 @@
+.mt-4 {
+  border: grey solid;
+  border-radius: 0;
+  font-family: "Abel", sans-serif;
+  font-size: 1.1em;
+}
+
+.mt-4.border {
+  opacity: 0.8;
+}
