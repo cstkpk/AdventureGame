@@ -40,20 +40,20 @@ class Results extends Component {
                 <div id='stars3'></div>
                 <Card>
                     <Card.Body>
-                        <Card.Text>
+                        {/* <Card.Text> */}
                             <p>{`${this.state.user.playerName}:`}</p>
                             <p>{story[0].text}</p>
-                            <p>{this.state.user.moon ? "Here's a story and some facts about your time on the moon!" : `${story[1].text}`}</p>
-                            <p>{this.state.user.mercury ? this.state.user.box1 ? "Mercury facts + BOX 1!" : "Mercury facts" : ""}</p>
-                            <p>{this.state.user.venus? this.state.user.shipDestruction ? "Venus facts and death" : "Venus facts" : ""}</p>
-                            <p>{this.state.user.mars ? this.state.user.dustStorm ? "Mars facts and death" : "Mars facts and ice" : ""}</p>
-                            <p>{this.state.user.jupiter ? this.state.user.shipDestruction ? "Jupiter facts and death" : "Jupiter facts" : ""}</p>
-                            <p>{this.state.user.saturn ? this.state.user.box2 ? "Saturn facts + BOX 2!" : "Saturn facts" : ""}</p>
-                            <p>{this.state.user.uranus ? this.state.user.freeze ? "Uranus facts and death" : "Uranus facts" : ""}</p>
-                            <p>{this.state.user.neptune ? "Neptune facts and fly home": ""}</p>
-                            <p>{this.state.user.pluto ? this.state.user.land ? this.state.user.box1 || this.state.user.box2 ? "Pluto facts and landing with the aliens and boxes" : "Pluto facts and landing with the aliens" : "Pluto facts and fly home" : ""}</p>
-                            {/* <p>{this.state.user.box1 || this.state.user.box2 ? "YOU FOUND THE BOXES yeehaw" : "You found NOTHING."}</p> */}
-                        </Card.Text>
+                            <p>{this.state.user.moon ? `${story[2].text}` : `${story[1].text}`}</p>
+                            <p>{this.state.user.mercury ? this.state.user.box1 ? `${story[3].text} ${story[4].text}` : `${story[3].text}` : ""}</p>
+                            <p>{this.state.user.venus? this.state.user.shipDestruction ? `${story[6].text}` : `${story[5].text}` : ""}</p>
+                            <p>{this.state.user.mars ? this.state.user.dustStorm ? `${story[8].text}` : `${story[7].text}` : ""}</p>
+                            <p>{this.state.user.jupiter ? this.state.user.shipDestruction ? `${story[10].text}` : `${story[9].text}` : ""}</p>
+                            <p>{this.state.user.saturn ? this.state.user.box2 ? `${story[11].text} ${story[12].text}` : `${story[11].text}` : ""}</p>
+                            <p>{this.state.user.uranus ? this.state.user.freeze ? `${story[13].text} ${story[14].text}` : `${story[13].text}` : ""}</p>
+                            <p>{this.state.user.neptune ? `${story[15].text}`: ""}</p>
+                            <p>{this.state.user.pluto ? this.state.user.land ? this.state.user.box1 || this.state.user.box2 ? `${story[18].text}` : `${story[17].text}` : `${story[16].text}` : ""}</p>
+                            <p>{this.state.user.moon ? this.state.user.deepSpace ? `${story[20].text}` : `${story[19].text}`: ""}</p>
+                        {/* </Card.Text> */}
                     </Card.Body>
                 </Card>
             </Container>

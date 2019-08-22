@@ -116,8 +116,8 @@
    },
    {
        "id": 24,
-       "question": ["Dangerous indeed! Good thinking on that one. You’ve just avoided certain death. Do you want to continue on your space travels?"],
-       "choices": ["Yes!", "No!"]
+       "question": ["Dangerous indeed! Good thinking on that one. You’ve just avoided certain death. In celebration of life, you decide to continue your space travels!"],
+       "choices": ["Hooray!"]
    },
    {
        "id": 25,

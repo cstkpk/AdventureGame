@@ -73,6 +73,10 @@ const storySchema = new Schema({
     land: {
         type: Boolean,
         default: false
+    },
+    deepSpace: {
+        type: Boolean,
+        default: false
     }
 });
 
