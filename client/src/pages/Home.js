@@ -347,6 +347,7 @@ class Home extends Component {
                 });
                 break;
             case "Neptune":
+                this.searchBodies("neptune");
                 this.setState({
                     question: QA[30].question,
                     answerChoices: QA[30].choices,
@@ -358,6 +359,7 @@ class Home extends Component {
                 .catch(err => console.log(err));
                 break;
             case "Pluto":
+                this.searchBodies("pluto");
                 this.setState({
                     question: QA[31].question,
                     answerChoices: QA[31].choices,
