@@ -4,12 +4,12 @@
   box-shadow: 0 0 5vmin 1vmin #000 inset;
   box-sizing: border-box;
   font-family: "Press Start 2P", cursive;
-  font-size: 20px;
+  font-size: 12px;
   overflow: hidden;
   color: white;
   border-radius: 0;
   border: solid grey 5px;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 #facts:before {
