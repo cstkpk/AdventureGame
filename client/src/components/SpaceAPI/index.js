@@ -2,14 +2,17 @@ import React from "react";
 import { Card, Col } from "react-bootstrap";
 import PlanetDetail from "../PlanetDetail";
 import MoonDetail from "../MoonDetail";
+import "./style.css";
 
 function SpaceAPI(props) {
   if (props.englishName === "Earth") {
     return (
       <Col md={{ span: 4 }}>
-        <Card>
+        <Card id="facts">
           <Card.Body>
-            <Card.Title>Earth</Card.Title>
+            <Card.Title>
+              <u>Earth</u>
+            </Card.Title>
             <ul className="list-unstyled">
               <li>
                 <strong>Number of Moons: </strong>1
@@ -28,7 +31,7 @@ function SpaceAPI(props) {
   } else {
     return (
       <Col md={{ span: 4 }}>
-        <Card heading={props.englishName}>
+        <Card id="facts" heading={props.englishName}>
           {props.isPlanet ? (
             <PlanetDetail
               englishName={props.englishName}
