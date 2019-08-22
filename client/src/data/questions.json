@@ -47,7 +47,7 @@
    {
        "id": 10,
        "question": ["The computer sounds a siren! The moon doesn’t have an oxygenated atmosphere like Earth. If you go outside without a space suit, you’ll die!"],
-       "choices": ["You ignore the warning and go outside anyway", "Thanks for the warning! You put on the space suit before going outside"]
+       "choices": ["You ignore the warning and go outside anyway.", "Thanks for the warning! You put on the space suit before going outside."]
    },
    {
        "id": 11,

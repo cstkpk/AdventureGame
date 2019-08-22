@@ -16,7 +16,3 @@ module.exports = {
   moonLanding: {image: require("./gifs/Ship_MoonLanding.gif"), alt: "Rocket lands on the Moon"},
   plutoSurface: {image: require("./gifs/Ship_PlutoSurface.png"), alt: "Pluto's surface"}
 };
-
-// module.exports = {
-//     alt1: "Rocket ship!"
-// }

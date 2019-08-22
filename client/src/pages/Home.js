@@ -91,7 +91,6 @@ class Home extends Component {
                 this.setState({ 
                     question: QA[2].question,
                     answerChoices: QA[2].choices,
-                    // image: images.interiorPowerOn
                 });
                 API.updatePlayer(currentID, {element1: true})
                 .then(res => {
@@ -103,7 +102,6 @@ class Home extends Component {
                 this.setState({ 
                     question: QA[3].question,
                     answerChoices: QA[3].choices,
-                    // image: images.rocketEngine
                 });
                 break;
             case "You completely forgot!":
