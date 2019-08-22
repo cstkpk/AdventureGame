@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Container } from 'react-bootstrap';
+import { Row, Container, Modal, Button } from 'react-bootstrap';
 import QA from "../data/questions.json";
 import QADisplay from "../components/QADisplay";
 import Animation from "../components/Animation";
@@ -8,6 +8,7 @@ import IntroForm from "../components/IntroForm";
 import * as images from "../components/Animation/assets"
 import API from "../utils/API.js";
 import "./Home.css";
+import { truncate } from "fs";
 
 class Home extends Component {
 
@@ -21,22 +22,40 @@ class Home extends Component {
         result: {},
         isHidden: true,
         isHiddenForm: false,
-        playerName: ""
+        playerName: "",
+        showModal: false
+    };
+
+    close = () => {
+        this.setState({
+            showModal: false
+        });
+    };
+
+    open = (event) => {
+        event.preventDefault();
+        this.setState({
+            showModal: true
+        });
     };
 
     toggleHidden = (event) => {
-        event.preventDefault();
-        this.setState({ isHiddenForm: !this.state.isHiddenForm })
-        setTimeout( () => this.setState({
-            isHidden: !this.state.isHidden
-        }), 3000);
-        console.log(this.state.playerName);
-        API.createPlayer({playerName: this.state.playerName})
-            .then(res => {
-                console.log(res.data._id);
-                sessionStorage.setItem("playerID", JSON.stringify(res.data._id));
-            })
-            .catch(err => console.log(err));
+        // if (this.state.playerName === "") {
+        //     alert("no");
+        // } else {
+            event.preventDefault();
+            this.setState({ isHiddenForm: !this.state.isHiddenForm })
+            setTimeout( () => this.setState({
+                isHidden: !this.state.isHidden
+            }), 3000);
+            console.log(this.state.playerName);
+            API.createPlayer({playerName: this.state.playerName})
+                .then(res => {
+                    console.log(res.data._id);
+                    sessionStorage.setItem("playerID", JSON.stringify(res.data._id));
+                })
+                .catch(err => console.log(err));
+        // }
     }
 
     handleInputChange = event => {
@@ -367,13 +386,20 @@ class Home extends Component {
                     />
                 </Row>}
                 {!this.state.isHiddenForm && <IntroForm
-                toggleHidden={this.toggleHidden.bind(this)}
+                toggleHidden={this.state.playerName === "" ? this.open : this.toggleHidden.bind(this)}
                 value={this.state.playerName}
                 name="playerName"
                 onChange={this.handleInputChange}
                 // id="intro-form"
                 />}
-                {/* <p id="title">I am a space man</p> */}
+                <Modal show={this.state.showModal} onHide={this.close}>
+                    <Modal.Body>
+                        <h4>Please Enter Your Name</h4>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button onClick={this.close}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
             </Container>
         );
     }
