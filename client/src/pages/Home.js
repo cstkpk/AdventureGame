@@ -319,7 +319,7 @@ class Home extends Component {
             case "There's no place like home!":
             case "This was great, but please take me home!":
             case "I’m ready for more!":
-                window.location.href = window.location + "/results";
+                window.location.href = window.location + "results";
                 break;
             default:
                 console.log("ERRRROROROROR");

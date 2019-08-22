@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
+import { Container } from 'react-bootstrap';
+import "./Home.css";
 
 class Results extends Component {
     constructor() {
@@ -31,10 +33,13 @@ class Results extends Component {
 
     render() {
         return(
-            <div>
+            <Container fluid={true}>
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
                 <p>This might be a results page?</p>
                 <p>{this.state.user.element1 ? "true" : "false"}</p>
-            </div>
+            </Container>
         );
     };
 
