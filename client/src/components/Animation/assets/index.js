@@ -1,6 +1,6 @@
 module.exports = {
-  rocket1: require("./rocket1.gif"),
-  rocketLeaveEarth: require("./gifs/Ship_TakeOff.gif"),
+  rocket1: {image: require("./rocket1.gif"), alt: "Rocket"},
+  rocketLeaveEarth: {image: require("./gifs/Ship_TakeOff.gif"), alt: "Rocket leaving Earth"},
   engineAnimation: require("./gifs/Ship_4_EngineAnimation.gif"),
   shipExplode: require("./gifs/Ship_Explode.gif"),
   approachJupiter: require("./gifs/Ship_ApproachJupiter.gif"),

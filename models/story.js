@@ -9,6 +9,18 @@ const storySchema = new Schema({
     playerChoices: {
         type: Array
         // type: [ String ]
+    },
+    element1: {
+        type: Boolean,
+        default: false
+    },
+    box1: {
+        type: Boolean,
+        default: false
+    },
+    box2: {
+        type: Boolean,
+        default: false
     }
 });
 

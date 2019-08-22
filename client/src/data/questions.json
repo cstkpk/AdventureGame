@@ -122,7 +122,7 @@
    {
        "id": 25,
        "question": ["Welcome to Saturn! Best known for its enormous ring system, Saturn is mainly composed of gases, including hydrogen, helium, and methane. Its rings are made mostly of chunks of ice and dust. While these rings stretch out more than 120,700 km from the planet, they’re only about 20 meters thick. You notice that all of that ice and dust moves fast! Do you:"],
-       "choices": ["Send the ship through the ring system to get a closer look at the atmosphere", "Observe from a distance"]
+       "choices": ["Send the ship through the ring system to get a closer look at the atmosphere.", "Observe from a distance."]
    },
    {
        "id": 26,

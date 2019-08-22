@@ -16,7 +16,8 @@ class Home extends Component {
         question: QA[0].question,
         answerChoices: QA[0].choices,
         // chosen: "",
-        image: images.rocketLeaveEarth,
+        image: images.rocketLeaveEarth.image,
+        alt: images.rocketLeaveEarth.alt,
         result: {},
         isHidden: true,
         isHiddenForm: false,
@@ -75,6 +76,11 @@ class Home extends Component {
                     answerChoices: QA[2].choices,
                     // image: images.interiorPowerOn
                 });
+                API.updatePlayer(currentID, {element1: true})
+                .then(res => {
+                    console.log(res.data);
+                })
+                .catch(err => console.log(err));
                 break;
             case "Next":
                 this.setState({ 
@@ -150,6 +156,12 @@ class Home extends Component {
                     question: QA[13].question,
                     answerChoices: QA[13].choices
                 });
+                // Set flag in DB here for Box1
+                API.updatePlayer(currentID, {box1: true})
+                .then(res => {
+                    console.log(res.data.box1);
+                })
+                .catch(err => console.log(err));
                 break;
             case "Venus":
                 this.searchBodies("venus");
@@ -231,6 +243,12 @@ class Home extends Component {
                     question: QA[25].question,
                     answerChoices: QA[25].choices
                 });
+                // Set flag in DB here
+                API.updatePlayer(currentID, {box2: true})
+                .then(res => {
+                    console.log(res.data.box2);
+                })
+                .catch(err => console.log(err));
                 break;
             case "Uranus":
                 this.searchBodies("uranus");
@@ -278,23 +296,24 @@ class Home extends Component {
                     answerChoices: QA[32].choices
                 });
                 break;
-            case "":
-                this.setState({
-                    question: QA[33].question,
-                    answerChoices: QA[33].choices
-                });
-                break;
-            case "":
-                this.setState({
-                    question: QA[34].question,
-                    answerChoices: QA[34].choices
-                });
-                break;
-            case "":
-                this.setState({
-                    question: QA[0].question,
-                    answerChoices: QA[0].choices
-                });
+            case "Yes! You have exactly what they need.":
+            case "You’re not sure what they’re talking about…":
+                API.getPlayer(currentID)
+                .then(res => {
+                    if (res.data.box1 || res.data.box2) {
+                        this.setState({
+                            question: QA[34].question,
+                            answerChoices: QA[34].choices
+                        });
+                    }
+                    else {
+                        this.setState({
+                            question: QA[33].question,
+                            answerChoices: QA[33].choices
+                        });
+                    }
+                })
+                .catch(err => console.log(err));
                 break;
             default:
                 console.log("ERRRROROROROR");
