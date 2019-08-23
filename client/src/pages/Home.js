@@ -411,6 +411,7 @@ class Home extends Component {
       case "I guess you'll have to go home early.":
       case "I guess this is how it ends…":
       case "This is the end of the road for you.":
+      case "'I’ve made it this far. Just take me home!'":
       case "There's no place like home!":
       case "This was great, but please take me home!":
       case "Get out of there while you still have your skin.":
