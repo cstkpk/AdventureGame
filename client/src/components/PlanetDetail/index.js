@@ -10,7 +10,7 @@ function PlanetDetail (props) {
                 <ul className="list-unstyled">
                     <li><strong>Number of Moons: </strong>{props.moons}</li>
                     <li><strong>Discovered By: </strong>{props.discoveredBy}</li>
-                    <li>{props.englishName} was discovered about {moment(props.discoveryDate, "DD/MM/YYYY").fromNow()} on {moment(props.discoveryDate, "DD/MM/YYYY").format("MMMM Do YYYY")}</li>
+                    <li>{props.englishName} was discovered about {moment(props.discoveryDate, "DD/MM/YYYY").fromNow()} on {moment(props.discoveryDate, "DD/MM/YYYY").format("MMMM Do, YYYY")}</li>
                     <li><strong>Gravity: </strong>{props.gravity} m/s<sup>2</sup></li>
                     <li>If you weighed 100lbs on Earth you would weigh about {parseInt((props.gravity/9.8)*100)}lbs here!</li>
                     <li><strong>Diameter: </strong>{parseInt(2*(props.radius)).toLocaleString()} Kilometers</li>
