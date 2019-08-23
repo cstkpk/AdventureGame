@@ -38,7 +38,7 @@ class Results extends Component {
                 <div id='stars'></div>
                 <div id='stars2'></div>
                 <div id='stars3'></div>
-                <Card>
+                <Card id="results-text" className="mt-3">
                     <Card.Body>
                         {/* <Card.Text> */}
                             <p>{`${this.state.user.playerName}:`}</p>
