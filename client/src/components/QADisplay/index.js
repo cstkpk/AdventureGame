@@ -7,11 +7,9 @@ function QADisplay(props) {
     <Col md={{ span: 8, offset: 2 }}>
       <Card className="mt-4" text="white" bg="transparent">
         <Card.Body>
-          <Card.Text>
             {props.question.map(paragraphs => (
               <p key={paragraphs}>{paragraphs}</p>
             ))}
-          </Card.Text>
           <Card.Text>
             {props.choices.map(choices => (
               <Button

@@ -8,7 +8,6 @@ import IntroForm from "../components/IntroForm";
 import * as images from "../components/Animation/assets";
 import API from "../utils/API.js";
 import "./Home.css";
-// import { truncate } from "fs";
 
 class Home extends Component {
   state = {
@@ -52,7 +51,7 @@ class Home extends Component {
       .then(res => {
         console.log(res.data._id);
         sessionStorage.setItem("playerID", JSON.stringify(res.data._id));
-        if (this.state.playerName === "Erik") {
+        if (this.state.playerName === "Erik" || this.state.playerName === "erik") {
             API.updatePlayer(res.data._id, {hufflepuff: true})
             .then(res => console.log(res.data.hufflepuff))
             .catch(err => console.log(err));

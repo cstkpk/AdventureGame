@@ -8,7 +8,6 @@ const storySchema = new Schema({
     },
     playerChoices: {
         type: Array
-        // type: [ String ]
     },
     element1: {
         type: Boolean,
