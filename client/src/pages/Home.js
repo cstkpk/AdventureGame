@@ -97,7 +97,9 @@ class Home extends Component {
       case "Open it?":
         this.setState({
           question: QA[2].question,
-          answerChoices: QA[2].choices
+          answerChoices: QA[2].choices,
+          image: images.rocketLeaveEarth.image,
+          alt: images.rocketLeaveEarth.alt
         });
         API.updatePlayer(currentID, { element1: true })
           .then(res => {
