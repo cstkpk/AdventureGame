@@ -10,7 +10,7 @@ function IntroForm(props) {
           <Form.Label>Enter your name:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Your name"
+            placeholder="Marvin the Martian"
             name={props.name}
             value={props.value}
             onChange={props.onChange}
