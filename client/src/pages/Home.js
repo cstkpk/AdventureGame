@@ -51,7 +51,8 @@ class Home extends Component {
       .then(res => {
         console.log(res.data._id);
         sessionStorage.setItem("playerID", JSON.stringify(res.data._id));
-        if (this.state.playerName === "Erik" || this.state.playerName === "erik") {
+        // The "Hufflepuff feature"
+        if (this.state.playerName === "Erik" || this.state.playerName === "erik" || this.state.playerName === "Kire" || this.state.playerName === "kire") {
             API.updatePlayer(res.data._id, {hufflepuff: true})
             .then(res => console.log(res.data.hufflepuff))
             .catch(err => console.log(err));
@@ -477,16 +478,15 @@ class Home extends Component {
             value={this.state.playerName}
             name="playerName"
             onChange={this.handleInputChange}
-            // id="intro-form"
           />
         )}
         <Modal id="modal-style" show={this.state.showModal} onHide={this.close}>
-          <Modal.Body>
-            <h4>Please Enter Your Name</h4>
+          <Modal.Body className="modal-bg">
+            <h4 className="text-center">Please Enter Your Name</h4>
           </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.close}>Close</Button>
-          </Modal.Footer>
+          <Modal.Body className="modal-bg">
+            <Button variant="success" className="btn-block" onClick={this.close}>Close</Button>
+          </Modal.Body>
         </Modal>
       </Container>
     );

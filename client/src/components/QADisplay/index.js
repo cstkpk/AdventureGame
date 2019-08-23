@@ -5,7 +5,7 @@ import "./style.css";
 function QADisplay(props) {
   return (
     <Col md={{ span: 8, offset: 2 }}>
-      <Card className="mt-4" text="white" bg="transparent">
+      <Card className="mt-4 QA-card" text="white">
         <Card.Body>
             {props.question.map(paragraphs => (
               <p key={paragraphs}>{paragraphs}</p>

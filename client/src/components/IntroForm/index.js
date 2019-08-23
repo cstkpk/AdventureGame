@@ -1,13 +1,13 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Container } from "react-bootstrap";
 import "./style.css";
 
 function IntroForm(props) {
   return (
-    <div className="container" id={props.id}>
+    <Container>
       <Form id="name-form">
         <Form.Group>
-          <Form.Label text="white">Enter your name:</Form.Label>
+          <Form.Label>Enter your name:</Form.Label>
           <Form.Control
             type="text"
             placeholder="Your name"
@@ -16,11 +16,11 @@ function IntroForm(props) {
             onChange={props.onChange}
           />
         </Form.Group>
-        <Button type="submit" onClick={event => props.toggleHidden(event)}>
+        <Button className="btn-block intro-btn" variant="outline-success" type="submit" onClick={event => props.toggleHidden(event)}>
           Begin
         </Button>
       </Form>
-    </div>
+    </Container>
   );
 }
 

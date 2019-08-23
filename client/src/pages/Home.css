@@ -10,7 +10,6 @@ body {
 }
 
 #modal-style {
-
   animation: colorPulse 5s infinite ease-in-out;
   /* background-image: radial-gradient(#444, #111); */
   box-shadow: 0 0 5vmin 1vmin #000 inset;
@@ -19,7 +18,7 @@ body {
   font-size: 20px;
   overflow: hidden;
   border-radius: 0;
-  background-color: black;
+  /* background-color: black; */
   line-height: 40px;  
 }
 
@@ -45,6 +44,12 @@ body {
   right: 0;
   top: 0;
   z-index: 2;
+}
+
+.modal-bg {
+  /* background-color: black; */
+    background-image: radial-gradient(rgba(68, 68, 68), rgba(25, 25, 25));
+  /* background-color: rgba(50, 50, 50, 0.8) */
 }
 
 p:last-child:after {
