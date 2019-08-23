@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import { Container, Card } from 'react-bootstrap';
+import { Container, Card, Button } from 'react-bootstrap';
 import story from "../data/results.json";
 import "./Home.css";
 
@@ -49,6 +49,7 @@ class Results extends Component {
                         <p>{this.state.user.neptune ? `${story[15].text}`: ""}</p>
                         <p>{this.state.user.pluto ? this.state.user.land ? this.state.user.box1 || this.state.user.box2 ? `${story[18].text}` : `${story[17].text}` : `${story[16].text}` : ""}</p>
                         <p>{this.state.user.moon ? this.state.user.deepSpace ? `${story[20].text}` : `${story[19].text}`: ""}</p>
+                    <Button variant="outline-light" className="btn-block" href="/">Play again!</Button>
                     </Card.Body>
                 </Card>
             </Container>
