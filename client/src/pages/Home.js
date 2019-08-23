@@ -439,6 +439,7 @@ class Home extends Component {
   };
 
   render() {
+    // To check if input name contains a number
     var hasNumber = /\d/;
 
     return (
