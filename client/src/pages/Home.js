@@ -433,6 +433,8 @@ class Home extends Component {
   };
 
   render() {
+    var hasNumber = /\d/;
+
     return (
       <Container fluid={true}>
         <div id="stars" />
@@ -472,6 +474,8 @@ class Home extends Component {
           <IntroForm
             toggleHidden={
               this.state.playerName === ""
+                ? this.open
+                : hasNumber.test(this.state.playerName) 
                 ? this.open
                 : this.toggleHidden.bind(this)
             }
