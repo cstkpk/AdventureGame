@@ -1,0 +1,107 @@
+[
+    {
+        "id": 0,
+        "type": "Beginning",
+        "text": "Earlier today, you found a mysterious package at your doorstep. You opened it up, and inside were instructions for building your own rocket ship! You masterfully constructed the ship, and when you climbed aboard and booted up the computer, a message flashed across the screen, welcoming you to your mission. Then, before you could think, the engines fired up and the ship took off! What an exciting start to your day!"
+    },
+    {
+        "id": 1,
+        "type": "No moon",
+        "text": "The rocket ship was taking you to the moon! It joked about the moon being made of cheese, which you didn't think was very funny. It even tried to placate you by sharing a parable about why people say the moon is made of cheese, but it seems that you woke up on the wrong side of the bed today... and you decided that you only wanted to visit the moon if it were made of cheese. So the ship took you home. What a way to end an adventure before it begins!"
+    },
+    {
+        "id": 2,
+        "type": "Visited moon",
+        "text": "The rocket ship took you to the moon! You got to explore, do the moonwalk, examine craters, and admire the beauty of outer space. You even learned that the dark side of the moon is a myth: both sides of the moon get the same amount of sunlight, but we on Earth only see one side of the moon. It takes the moon the same amount of time to rotate around on its axis as it does for it to orbit the Earth, meaning the same side of the moon is always facing Earth."
+    },
+    {
+        "id": 3,
+        "type": "Mercury",
+        "text": "After you reboarded the ship, you decided to make Mercury your next destination. You explored the surface in your extra durable spacesuit and learned about the craters on its surface. Mercury is the most cratered planet in our entire solar system! Unlike most other planets, which 'self-heal' through geological processes, Mercury's surface is covered in craters, old and new. The largest crater on Mercury is called the Caloris Basin. It is about 1,550 km wide and was discovered in 1974 by the Mariner probe."
+    },
+    {
+        "id": 4,
+        "type": "Box 1",
+        "text": "While exploring Mercury's craters, you stumbled across a small box, and when you pulled it out of the ground, you found a note attached explaining that the box contained a special mineral needed to finish a secret project... who is the mineral for, and who sent you on this mission?"
+    },
+    {
+        "id": 5,
+        "type": "Venus",
+        "text": "After you reboarded the ship, you decided to make Venus your next destination. It was once thought that Venus might be a tropical paradise, but once radio mapping was developed in the 1960s, scientists were able to measure the extreme temperatures and pressures. Venus's dense atmosphere of carbon dioxide traps heat and causes a greenhouse effect, making it the hottest planet in our solar system. Its atmospheric pressure is so high that it crushes any asteroids before they even make impact with the surface. It's a good thing you decided not to attempt any landings!"
+    },
+    {
+        "id": 6,
+        "type": "Venus landing",
+        "text": "After you reboarded the ship, you decided to make Venus your next destination. It was once thought that Venus might be a tropical paradise, but once radio mapping was developed in the 1960s, scientists were able to measure the extreme temperatures and pressures. Venus's dense atmosphere of carbon dioxide traps heat and causes a greenhouse effect, making it the hottest planet in our solar system. Its atmospheric pressure is so high that it crushes any asteroids before they even make impact with the surface... which is why your ship broke apart when you tried to land! At least you'll know better for next time."
+    },
+    {
+        "id": 7,
+        "type": "Mars",
+        "text": "After you reboarded the ship, you decided to make Mars your next destination. As you were exploring, you saw some dark stripes on a crater wall. Then you remembered that there are signs of liquid water on Mars! Scientists have discoverd water on Mars in the form of ice. In satellite images, we can see signs of trickling water as dark stripes or stains on cliffs and crater walls. However, this water would have to be salty, or else it would freeze or vaporize due to Mars's thin atmosphere. Could the mysterious creatures who sent you on this mission once have lived here?"
+    },
+    {
+        "id": 8,
+        "type": "Mars dust storm",
+        "text": "After you reboarded the ship, you decided to make Mars your next destination. You headed East and quickly ran into a massive dust storm. Even though Mars has a thin atmosphere, it still creates wind, and when these winds pick up the fine, dry dust particles of Mars's surface, they can create enormous dust storms. These storms can last for days and reach wind speeds of over 100 kilometers per hour! Sometimes, the storms can get so large that they cover the entire planet in dust for weeks. It looks like you'll have to wait a while before you can continue on your journey!"
+    },
+    {
+        "id": 9,
+        "type": "Jupiter",
+        "text": "For your next planetary exploration, you chose Jupiter, one of the gas giants. What most people don't realize about Jupiter is that it actually has a thin ring system made up of dust particles from collisions with asteroids and other bodies earlier in its history. The ring system begins about 92,000 kilometers above Jupiter's clouds and stetches out farther than 225,000 kilometers from the planet. While passing by the planet, you got a spectacular view of its Great Red Spot, a storm so large that the Earth could fit inside of it three times over. Good thing you decided not to take a closer look; it would have swallowed you whole!"
+    },
+    {
+        "id": 10,
+        "type": "Jupiter Great Red Spot",
+        "text": "For your next planetary exploration, you chose Jupiter, one of the gas giants. What most people don't realize about Jupiter is that it actually has a thin ring system made up of dust particles from collisions with asteroids and other bodies earlier in its history. The ring system begins about 92,000 kilometers above Jupiter's clouds and stetches out farther than 225,000 kilometers from the planet. While passing by the planet, you got a spectacular view of its Great Red Spot, a storm so large that the Earth could fit inside of it three times over. For some reason, you decided it was a good idea to get an even closer look and the storm swallowed you whole!"
+    },
+    {
+        "id": 11,
+        "type": "Saturn",
+        "text": "For your next planetary exploration, you chose Saturn, one of the gas giants. What most people don't realize about Saturn is that it has oval-shaped storms similar to those on Jupiter. The region around its north pole has a hexagonal-shaped pattern of clouds. Each side of this hexagon is about 14,500 kilometers long, which is larger than the diameter of Earth! Saturn's south pole does not have a hexagonal cloud pattern, but it does have a vortex that resembles a hurricane-type storm."
+    },
+    {
+        "id": 12,
+        "type": "Saturn's rings box 2",
+        "text": "As you were passing through the rings, you noticed an oddly shaped piece of ice. When you retrieved it, you realized that it wasn't ice at all but a box with a note attached! The note explained that the box contained a special mineral needed to finish a secret project... who is behind all of this?"
+    },
+    {
+        "id": 13,
+        "type": "Uranus",
+        "text": "For your next planetary exploration, you chose Uranus, one of the gas giants. Unlike the other gas giants, Uranus is sometimes referred to as an 'ice giant' because beneath its hydrogen and helium upper layer is an icy mantle. The upper atmosphere of this mantle is made of water, amomnia, and methane ice crystals, which give the planet its pale blue color. This upper atmosphere is then covered by a methane haze that hides the viscious, freezing cold storms that brew in the clouds underneath."
+    },
+    {
+        "id": 14,
+        "type": "Uranus surface",
+        "text": "You decided to try visiting Uranus's icy mantle, which turned out to be a huge mistake. It's so cold that the ship's engines froze over! Could anything survive in this hostile environment?"
+    },
+    {
+        "id": 15,
+        "type": "Neptune",
+        "text": "To end your day's adventure, you stopped by Neptune. You admired the power of its Great Dark Spot and learned that Neptune has the fastest known wind speeds in the solar system! Neptune also has a notably thick atmosphere composed of 74% hydrogen, 25% helium, and 1% methane. Particles of icy methane and minor gases give Neptune its dark blue color. Isn't our location in the universe amazing?"
+    },
+    {
+        "id": 16,
+        "type": "Pluto",
+        "text": "To end your day's adventure, you stopped by Pluto. As you neared closer to the surface, you saw an odd structure poking above the horizon. You knew this wasn't a natural feature of the dwarf planet... but it's been such a long day that you decided it wasn't worth risking your skin to check it out."
+    },
+    {
+        "id": 17,
+        "type": "Pluto with landing",
+        "text": "To end your day's adventure, you stopped by Pluto. As you neared closer to the surface, you saw an odd structure poking above the horizon. You knew this wasn't a natural feature of the dwarf planet... but you were burning with curiosity at this point, so you decided to land nearby and check it out. After you landed, tall blue creatures surrounded the ship and summoned you into some kind of cosmic ceremony. They chanted in appreciation for your courage and celestial spirit! Although you were unable to find the minerals they needed to complete their secret project, they still invited you to their deep space feast of a bread-like substance baked in their nuclear fusion oven (technology borrowed from our very own Sun!) before sending you safely home."
+    },
+    {
+        "id": 18,
+        "type": "Pluto with landing plus box(es)",
+        "text": "To end your day's adventure, you stopped by Pluto. As you neared closer to the surface, you saw an odd structure poking above the horizon. You knew this wasn't a natural feature of the dwarf planet... but you were burning with curiosity at this point, so you decided to land nearby and check it out. After you landed, tall blue creatures surrounded the ship and summoned you into some kind of cosmic ceremony. They chanted in appreciation for your courage and celestial spirit! You even found the minerals they needed to complete their secret project: a brand new device for hyperspeed deep space travel! They invited you to be the guest of honor to their deep space feast of a bread-like substance baked in their nuclear fusion oven (technology borrowed from our very own Sun!)."
+    },
+    {
+        "id": 19,
+        "type": "Return home",
+        "text": "...And the next thing you know, you're back in your bed. Your memories feel fuzzy... was it all just a dream?"
+    },
+    {
+        "id": 20,
+        "type": "Deep space travel!",
+        "text": "As if that weren't enough, the blue people have graciously allowed you to join them in their deep space travel adventures. What a day this has turned out to be!"
+    }
+]

@@ -1,22 +1,177 @@
 [
    {
         "id": 1,
-        "question": "A, B, or C?",
-        "choices": ["A", "B", "C"] 
+        "question": ["Late last night, you heard a crash outside your bedroom window. You thought it was just part of your dream, but when you wake up and go outside, you find a mysterious package at your front door. Do you:"],
+        "choices": ["Immediately report it to the police?", "Open it?"] 
    },
    {
         "id": 2,
-        "question": "D, E, or F?",
-        "choices": ["D", "E", "F"]
+        "question": ["How lame! What adventures have you missed out on?"],
+        "choices": ["Back to the beginning!"]
    },
    {
        "id": 3,
-       "question": "G, H, or I?",
-       "choices": ["G", "H", "I"]
+       "question": ["Someone left you instructions for building your own rocket ship—how exciting! What a day this is turning out to be. After a few hours of careful construction, you’ve finally finished. When you step inside and turn on the guidance system, a message pops up:", "'Welcome! We’ve been waiting for you. This ship can take you anywhere you need to go. When you’ve finished your journey, find us at the last exit.'"],
+       "choices": ["Next"]
    },
    {
        "id": 4,
-       "question": "J, K, or L?",
-       "choices": ["J", "K", "L"]
+       "question": ["What an odd message! You start to get nervous, but the engines kick on before you have time to flee the ship. The computer asks you if you remembered to bring any snacks for the road."],
+       "choices": ["You completely forgot!", "You never leave home without a sandwich. But it’s missing a little something…"]
+   },
+   {
+       "id": 5,
+       "question":["'Don’t worry,' says the computer. 'I know where we can find some cheese.'", "The next thing you know, you’re hurtling through Earth’s atmosphere. It’s beautiful! As you leave the lights of Earth for the darkness of space, you see the moon appear to your left. What do you say to the computer?"],
+       "choices": ["Can we please land? I’ve always wanted to moonwalk!", "The moon isn’t made out of cheese!"]
+   },
+   {
+       "id": 6,
+       "question": ["'You really know your stuff!' says the computer. 'It’s true, the moon isn’t made of cheese. No one really believes that myth, and no one is sure where it started, but one story goes like this:", "'There was once a wolf who chased a fox into the forest. The fox knew this wolf wanted to make a meal out of him, so he pointed the wolf to the moon’s reflection on a nearby pond. He told him that this reflection was cheese floating on the pond’s surface, and to eat the cheese, he must first drink all of the water. The wolf drank and drank, trying to get to the cheese, but eventually he drank too much and burst! Needless to say, the fox got away.", "'Now, do you still want to go to the moon?'"],
+       "choices": ["I do wish there were cheese… but let’s go!", "No thank you. I only want to go if there’s cheese."]
+   },
+   {
+       "id": 7,
+       "question": ["Sorry, kid."],
+       "choices": ["I guess you'll have to go home early."]
+   },
+   {
+       "id": 8,
+       "question": ["The rocket lands gently on the surface of the moon. You look around and can’t believe your eyes—you’ve made it to outer space! You excitedly rush to the door to explore, but first you:"],
+       "choices": ["Grab your sandwich so you can enjoy a nice picnic.", "Put on a space suit.", "Call your parents to tell them about this amazing adventure!"]
+   },
+   {
+       "id": 9,
+       "question": ["They’ve been wondering where you went! They’re furious that you didn’t even bother to leave a note. But you apologize profusely, and they agree to let you stay in space as long as you promise to send pictures."],
+       "choices": ["Thanks Mom, thanks Dad!"]
+   },
+   {
+       "id": 10,
+       "question": ["The computer sounds a siren! The moon doesn’t have an oxygenated atmosphere like Earth. If you go outside without a space suit, you’ll die!"],
+       "choices": ["You ignore the warning and go outside anyway.", "Thanks for the warning! You put on the space suit before going outside."]
+   },
+   {
+       "id": 11,
+       "question": ["Bad move! The vacuum of space forces all of the air out of your lungs. Luckily, the space ship pulls you back inside before anything terrible happens to you."],
+       "choices": ["Let’s try that again, shall we?"]
+   },
+   {
+       "id": 12,
+       "question": ["The moon is amazing! You play in the craters, do the moonwalk, and admire the view of your home planet, Earth. As exciting as it is, you start to wonder what else is out there. You’ve also started to wonder about that mysterious message: who is waiting for you, and where is the last exit? To find out, you need to continue on your journey. You board the ship and ask it to take you to:"],
+       "choices": ["Mercury", "Venus", "Mars"]
+   },
+   {
+       "id": 13,
+       "question": ["Welcome to Mercury! Because it’s named after the Roman deity Mercury, who was the messenger of the gods, you have a good feeling that this planet will help you solve your mystery. Even though it’s hot (420º C during the day!), your space suit can handle it. You start walking around outside, marveling at all of the craters, when suddenly, you stumble upon a shiny object sticking out of the ground. What do you do?"],
+       "choices": ["Your curiosity is too strong! You pull it out of the ground.", "You have no idea what could be lurking beneath the surface. Best leave that alone."]
+   },
+   {
+       "id": 14,
+       "question": ["You’ve found a small box with a note attached! The note reads:", "'You’ve found a clue! Take this box with you back to the ship. It contains a special mineral that we need to finish our secret project… Please keep it safe and bring it to us!'", "'How odd,' you think to yourself. But who are you to argue with super-intelligent aliens?"],
+       "choices": ["You head back to the ship and continue onward."]
+   },
+   {
+       "id": 15,
+       "question": ["Welcome to Venus! You’d always heard that Venus and Earth are called twins because they’re a similar size, but as you descend into its atmosphere, you realize that the similarities end there. Even though Venus isn’t the closest planet to the sun, it is the hottest! As if that weren’t enough, its atmosphere is so heavy that its surface pressure is 90 times that of Earth. You realize how extreme this environment is and make a decision:"],
+       "choices": ["Continue to the surface! Any discovery is worth it.", "Get out of there before the ship breaks apart!"]
+   },
+   {
+       "id": 16,
+       "question": ["Oh no! The ship can’t withstand the atmospheric pressure and is breaking apart!"],
+       "choices": ["I guess this is how it ends…"]
+   },
+   {
+       "id": 17,
+       "question": ["Welcome to Mars, also known as the “Red Planet,” and home to the tallest mountain in the solar system! Olympus Mons, a shield volcano, is 21 kilometers tall and many scientists believe it’s still active. The computer gives you the go-ahead to depart the ship and explore, so step off and decide which direction to go:"],
+       "choices": ["East", "West"]
+   },
+   {
+       "id": 18,
+       "question": ["After a few minutes of walking, you see a dust storm approaching! You suddenly remember that Mars has the largest dust storms of any planet in the solar system. They can last for months and cover the entire planet! You start to run back to the ship, but the dust storm catches up quickly…"],
+       "choices": ["This is the end of the road for you."]
+   },
+   {
+       "id": 19,
+       "question": ["As you’re walking, you see some dark stripes on a crater wall. Could this be ice? Mars is known to have water (in the form of ice) on its surface. Maybe you’ve found some! You start to wonder if aliens could be real… maybe they’re the ones who left you that mysterious package?"],
+       "choices": ["It’s starting to get cold, so you head back to the ship."]
+   },
+   {
+       "id": 20,
+       "question": ["Having had a great time exploring a new planet, you get back onto the ship. You’re still wondering about who left you that package and what they want from you, so you decide to continue traveling through space. Maybe you’ll find answers there. You boot up the computer and ask it to take you to:"],
+       "choices": ["Jupiter", "Saturn", "Uranus"]
+   },
+   {
+       "id": 21,
+       "question": ["Welcome to Jupiter! Jupiter is so large that it’s two and a half times more massive than all of the other planets in the solar system combined. While its interior is made of rock, metal, and hydrogen compounds, it has a massive atmosphere that you have to get through first. This is why it’s known as a “gas giant”! As you near closer, you tell the ship to:"],
+       "choices": ["Stay in the outermost part of the atmosphere.", "Head to the surface!"]
+   },
+   {
+        "id": 22,
+        "question": ["Oh no! Jupiter has no surface—it’s made entirely of gas! Its “surface” is just the base of its atmosphere. Luckily, the computer sounds the alarm and keeps you safely in the outermost part of the atmosphere."],
+        "choices": ["Keep exploring Jupiter!"]
+   },
+   {
+       "id": 23,
+       "question": ["You eventually pass over the Great Red Spot, the famous storm that has been raging at least since 1830. Some people think it might be as old as three and a half centuries! One big mystery is what makes the red spot red… is today the day you find out?"],
+       "choices": ["Yes! Take me to the storm.", "No way! That seems dangerous."]
+   },
+   {
+       "id": 24,
+       "question": ["Dangerous indeed! Good thinking on that one. You’ve just avoided certain death. In celebration of life, you decide to continue your space travels!"],
+       "choices": ["Hooray!"]
+   },
+   {
+       "id": 25,
+       "question": ["Welcome to Saturn! Best known for its enormous ring system, Saturn is mainly composed of gases, including hydrogen, helium, and methane. Its rings are made mostly of chunks of ice and dust. While these rings stretch out more than 120,700 km from the planet, they’re only about 20 meters thick. You notice that all of that ice and dust moves fast! Do you:"],
+       "choices": ["Send the ship through the ring system to get a closer look at the atmosphere.", "Observe from a distance."]
+   },
+   {
+       "id": 26,
+       "question": ["As you’re passing through the rings, you notice an oddly shaped piece of ice a few meters away from the ship. It seems dangerous, but an instinct tells you that you have to examine it. Luckily, this ship has a sophisticated hydraulic arm system that you can use to grab objects. You send it to retrieve the chunk of ice, and when you bring it inside, you realize it’s not a chunk of ice at all but a box with a note attached! The note reads:", "You’ve found a clue! Take this box with you back to the ship. It contains a special mineral that we need to finish our secret project… Please keep it safe and bring it to us!"],
+       "choices": ["Now your curiosity is really kicking into gear. Who has sent you on this mission?"]
+   },
+   {
+       "id": 27,
+       "question": ["Welcome to Uranus! You see something odd upon approaching the planet: it appears to be rotating on its side! It turns out that its axis of spin is tilted by 98 degrees, making it appear to be sideways relative to the other planets. How interesting! The computer asks if you’d like to get a closer look, and you say:"],
+       "choices": ["Absolutely! Take me to the surface!", "We’re so far from home… and I don’t think that’s safe."]
+   },
+   {
+       "id": 28,
+       "question": ["What you didn’t know is that Uranus has the coldest temperatures of any planet in our solar system. At its coldest, temperatures drop to -224º C! On a related note, the ship’s engines immediately freeze over and stall out."],
+       "choices": ["I guess this is how it ends…"]
+   },
+   {
+       "id": 29,
+       "question": ["After a long day of space travel, you’re ready to go home. Just before you send the ship back toward Earth, you realize that something is still bothering you: what is the last exit, and who is waiting for you? You turn to the computer and say:"],
+       "choices": ["'I’ve made it this far. Just take me home!'", "'I still have to complete my mission.'"]
+   },
+   {
+       "id": 30,
+       "question": ["'And complete your mission you shall!' shouts the computer. 'We have enough fuel for one more stop. Where should we go?'"],
+       "choices": ["Neptune", "Pluto"]
+   },
+   {
+       "id": 31,
+       "question": ["Welcome to Neptune, the smallest of the gas giants! Similar to Jupiter’s 'Great Red Spot,' Neptune has a 'Great Dark Spot.' It’s a huge, rotating storm system with wind speeds up to 2,100 kilometers per hour. To this day, no one quite knows how its wind speeds got that fast. Realizing that your ship is almost out of fuel, you take satisfaction in your day of incredible space travel and head back home."],
+       "choices": ["There's no place like home!"]
+   },
+   {
+       "id": 32,
+       "question": ["As you fly nearer to the surface of this beloved dwarf planet, you see an odd structure poking above the horizon.", "'What could this possibly be?' you wonder.", "Do you:"],
+       "choices": ["Land nearby and check it out.", "Get out of there while you still have your skin."]
+   },
+   {
+       "id": 33,
+       "question": ["As you land, a few tall, blue creatures appear outside of the ship. They summon you, and even though you feel afraid, you appear to no longer be in control of your body. It’s as if it were walking on its own!", "'We knew you would come,' they say in unison. 'Prophecy told of an Earth child who would bring us the final ingredients for our grand experiment. Did you succeed?'"],
+       "choices": ["Yes! You have exactly what they need.", "You’re not sure what they’re talking about…"]
+   },
+   {
+       "id": 34,
+       "question": ["'You didn't find our lost minerals, but that is okay, Earth child,' chant the blue people. 'We are still impressed with your courage, and we would like to thank you by transporting you safely back home.'"],
+       "choices": ["There's no place like home!"]
+   },
+   {
+       "id": 35,
+       "question": ["'You are our savior!' chant the blue people. 'You have brought us the final pieces we need to finish our device for deep space travel. Would you like to come with us, or would you like to return home?'"],
+       "choices": ["This was great, but please take me home!", "I’m ready for more!"]
    }
 ]
