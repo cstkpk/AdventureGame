@@ -31,8 +31,8 @@
    },
    {
        "id": 7,
-       "question": ["Sorry, kid. I guess you’ll have to go home early."],
-       "choices": ["Maybe we take you to the results page now?"]
+       "question": ["Sorry, kid."],
+       "choices": ["I guess you'll have to go home early."]
    },
    {
        "id": 8,
@@ -76,8 +76,8 @@
    },
    {
        "id": 16,
-       "question": ["Oh no! The ship can’t withstand the atmospheric pressure and is breaking apart! I guess this is how it ends…"],
-       "choices": ["Maybe we take you to the results page now?"]
+       "question": ["Oh no! The ship can’t withstand the atmospheric pressure and is breaking apart!"],
+       "choices": ["I guess this is how it ends…"]
    },
    {
        "id": 17,
@@ -86,8 +86,8 @@
    },
    {
        "id": 18,
-       "question": ["After a few minutes of walking, you see a dust storm approaching! You suddenly remember that Mars has the largest dust storms of any planet in the solar system. They can last for months and cover the entire planet! You start to run back to the ship, but the dust storm catches up quickly… This is the end of the road for you."],
-       "choices": ["Maybe we take you to the results page now?"]
+       "question": ["After a few minutes of walking, you see a dust storm approaching! You suddenly remember that Mars has the largest dust storms of any planet in the solar system. They can last for months and cover the entire planet! You start to run back to the ship, but the dust storm catches up quickly…"],
+       "choices": ["This is the end of the road for you."]
    },
    {
        "id": 19,
@@ -136,8 +136,8 @@
    },
    {
        "id": 28,
-       "question": ["What you didn’t know is that Uranus has the coldest temperatures of any planet in our solar system. At its coldest, temperatures drop to -224º C! On a related note, the ship’s engines immediately freeze over and stall out. I guess this is how it ends…"],
-       "choices": ["Maybe we take you to the results page now?"]
+       "question": ["What you didn’t know is that Uranus has the coldest temperatures of any planet in our solar system. At its coldest, temperatures drop to -224º C! On a related note, the ship’s engines immediately freeze over and stall out."],
+       "choices": ["I guess this is how it ends…"]
    },
    {
        "id": 29,
@@ -152,7 +152,7 @@
    {
        "id": 31,
        "question": ["Welcome to Neptune, the smallest of the gas giants! Similar to Jupiter’s 'Great Red Spot,' Neptune has a 'Great Dark Spot.' It’s a huge, rotating storm system with wind speeds up to 2,100 kilometers per hour. To this day, no one quite knows how its wind speeds got that fast. Realizing that your ship is almost out of fuel, you take satisfaction in your day of incredible space travel and head back home."],
-       "choices": ["Maybe we take you to the results page now?"]
+       "choices": ["There's no place like home!"]
    },
    {
        "id": 32,
@@ -166,7 +166,7 @@
    },
    {
        "id": 34,
-       "question": ["'That is okay, Earth child,' chant the blue people. 'We are still impressed with your courage, and we would like to thank you by transporting you safely back home.'"],
+       "question": ["'You didn't find our lost minerals, but that is okay, Earth child,' chant the blue people. 'We are still impressed with your courage, and we would like to thank you by transporting you safely back home.'"],
        "choices": ["There's no place like home!"]
    },
    {

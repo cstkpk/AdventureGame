@@ -15,7 +15,6 @@ class Home extends Component {
     QA,
     question: QA[0].question,
     answerChoices: QA[0].choices,
-    // chosen: "",
     image: images.rocketLeaveEarth.image,
     alt: images.rocketLeaveEarth.alt,
     result: {},
@@ -53,12 +52,17 @@ class Home extends Component {
       .then(res => {
         console.log(res.data._id);
         sessionStorage.setItem("playerID", JSON.stringify(res.data._id));
+        if (this.state.playerName === "Erik") {
+            API.updatePlayer(res.data._id, {hufflepuff: true})
+            .then(res => console.log(res.data.hufflepuff))
+            .catch(err => console.log(err));
+            window.location.href = window.location + "results";
+        };
       })
       .catch(err => console.log(err));
   };
 
   handleInputChange = event => {
-    // console.log("event triggerd");
     const { name, value } = event.target;
     this.setState({
       [name]: value
@@ -66,9 +70,7 @@ class Home extends Component {
   };
 
     nextQuestion = (choices) => {
-        // console.log(choices);
         var currentID = JSON.parse(sessionStorage.getItem("playerID"));
-        // console.log(currentID);
         API.updatePlayer(currentID, {playerChoices: choices})
             .then(res => {
                 console.log(res.data.playerChoices);
@@ -400,7 +402,9 @@ class Home extends Component {
                 })
                 .catch(err => console.log(err));
                 break;
-            case "Maybe we take you to the results page now?":
+            case "I guess you'll have to go home early.":
+            case "I guess this is how it ends…":
+            case "This is the end of the road for you.":
             case "There's no place like home!":
             case "This was great, but please take me home!":
             case "Get out of there while you still have your skin.":

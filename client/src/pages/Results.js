@@ -42,8 +42,9 @@ class Results extends Component {
                     <Card.Body>
                         {/* <Card.Text> */}
                             <p>{`${this.state.user.playerName}:`}</p>
-                            <p>{story[0].text}</p>
-                            <p>{this.state.user.moon ? `${story[2].text}` : `${story[1].text}`}</p>
+                            <p>{this.state.user.hufflepuff ? "Sorry, we heard you were in Hufflepuff?" : ""}</p>
+                            <p>{this.state.user.hufflepuff === false ? story[0].text : ""}</p>
+                            <p>{this.state.user.hufflepuff === false ? this.state.user.moon ? `${story[2].text}` : `${story[1].text}` : ""}</p>
                             <p>{this.state.user.mercury ? this.state.user.box1 ? `${story[3].text} ${story[4].text}` : `${story[3].text}` : ""}</p>
                             <p>{this.state.user.venus? this.state.user.shipDestruction ? `${story[6].text}` : `${story[5].text}` : ""}</p>
                             <p>{this.state.user.mars ? this.state.user.dustStorm ? `${story[8].text}` : `${story[7].text}` : ""}</p>

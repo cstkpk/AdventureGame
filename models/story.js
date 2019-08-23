@@ -77,6 +77,10 @@ const storySchema = new Schema({
     deepSpace: {
         type: Boolean,
         default: false
+    },
+    hufflepuff: {
+        type: Boolean,
+        default: false
     }
 });
 
