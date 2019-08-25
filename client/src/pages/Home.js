@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Row, Container, Modal, Button } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import QA from "../data/questions.json";
 import QADisplay from "../components/QADisplay";
 import Animation from "../components/Animation";
 import SpaceAPI from "../components/SpaceAPI";
 import IntroForm from "../components/IntroForm";
+import WarnModal from "../components/WarnModal"
 import * as images from "../components/Animation/assets";
 import API from "../utils/API.js";
 import "./Home.css";
@@ -492,20 +493,11 @@ class Home extends Component {
             onChange={this.handleInputChange}
           />
         )}
-        <Modal id="modal-style" show={this.state.showModal} onHide={this.close}>
-          <Modal.Body className="modal-bg">
-            <h4 className="text-center">Please Enter Your Name</h4>
-          </Modal.Body>
-          <Modal.Body className="modal-bg">
-            <Button
-              variant="success"
-              className="btn-block"
-              onClick={this.close}
-            >
-              Close
-            </Button>
-          </Modal.Body>
-        </Modal>
+        <WarnModal 
+            show={this.state.showModal}
+            onHide={this.close}
+            onClick={this.close}
+        />
       </Container>
     );
   }
