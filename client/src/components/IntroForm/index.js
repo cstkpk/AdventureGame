@@ -11,12 +11,18 @@ function IntroForm(props) {
           <Form.Control
             type="text"
             placeholder="Marvin the Martian"
+            autocomplete="off"
             name={props.name}
             value={props.value}
             onChange={props.onChange}
           />
         </Form.Group>
-        <Button className="btn-block intro-btn" variant="outline-success" type="submit" onClick={event => props.toggleHidden(event)}>
+        <Button
+          className="btn-block intro-btn"
+          variant="outline-success"
+          type="submit"
+          onClick={event => props.toggleHidden(event)}
+        >
           Begin
         </Button>
       </Form>
