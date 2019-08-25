@@ -5,7 +5,7 @@ import QADisplay from "../components/QADisplay";
 import Animation from "../components/Animation";
 import SpaceAPI from "../components/SpaceAPI";
 import IntroForm from "../components/IntroForm";
-import WarnModal from "../components/WarnModal"
+import WarnModal from "../components/WarnModal";
 import * as images from "../components/Animation/assets";
 import API from "../utils/API.js";
 import "./Home.css";
@@ -99,8 +99,8 @@ class Home extends Component {
         this.setState({
           question: QA[2].question,
           answerChoices: QA[2].choices,
-          image: images.rocketLeaveEarth.image,
-          alt: images.rocketLeaveEarth.alt
+          image: images.packageAnimation.image,
+          alt: images.packageAnimation.alt
         });
         API.updatePlayer(currentID, { element1: true })
           .then(res => {
@@ -111,7 +111,9 @@ class Home extends Component {
       case "Next":
         this.setState({
           question: QA[3].question,
-          answerChoices: QA[3].choices
+          answerChoices: QA[3].choices,
+          image: images.rocketLeaveEarth.image,
+          alt: images.rocketLeaveEarth.alt
         });
         break;
       case "You completely forgot!":
@@ -493,10 +495,10 @@ class Home extends Component {
             onChange={this.handleInputChange}
           />
         )}
-        <WarnModal 
-            show={this.state.showModal}
-            onHide={this.close}
-            onClick={this.close}
+        <WarnModal
+          show={this.state.showModal}
+          onHide={this.close}
+          onClick={this.close}
         />
       </Container>
     );

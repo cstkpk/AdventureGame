@@ -63,5 +63,10 @@ module.exports = {
   plutoSurface: {
     image: require("./gifs/Ship_PlutoSurface.png"),
     alt: "Pluto's surface"
+  },
+
+  packageAnimation: {
+    image: require("./gifs/package.gif"),
+    alt: "Package opening"
   }
 };
