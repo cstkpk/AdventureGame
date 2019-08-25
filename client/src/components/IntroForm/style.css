@@ -11,17 +11,15 @@
   line-height: 40px;
 
   /* height: 100%; */
-  /* margin-top: 20%; */
+  /* margin-top: calc(30% - 0px); */
   /* margin-bottom: 20%; */
+  margin-top: 25%;
 
-  /* position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%; */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  /* width: 100%; */
 }
 
-#test {
-  /* background-color: teal; */
-}
 
 

@@ -47,7 +47,7 @@ const storySchema = new Schema({
     },
     saturn: {
         type: Boolean,
-        defaault: false
+        default: false
     },
     box2: {
         type: Boolean,
