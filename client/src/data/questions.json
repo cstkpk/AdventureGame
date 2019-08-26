@@ -121,7 +121,7 @@
   {
     "id": 15,
     "question": [
-      "Welcome to Venus! You’d always heard that Venus and Earth are called twins because they’re a similar size, but as you descend into its atmosphere, you realize that the similarities end there. Even though Venus isn’t the closest planet to the sun, it is the hottest! As if that weren’t enough, its atmosphere is so heavy that its surface pressure is 90 times that of Earth. You realize how extreme this environment is and make a decision:"
+      "Welcome to Venus! You’d always heard that Venus and Earth are called twins because they’re a similar size, but as you descend into its atmosphere, you realize that the similarities end there. Even though Venus isn’t the closest planet to the Sun, it is the hottest! As if that weren’t enough, its atmosphere is so heavy that its surface pressure is 90 times that of Earth. You realize how extreme this environment is and make a decision:"
     ],
     "choices": [
       "Continue to the surface! Any discovery is worth it.",
@@ -138,7 +138,7 @@
   {
     "id": 17,
     "question": [
-      "Welcome to Mars, also known as the “Red Planet,” and home to the tallest mountain in the solar system! Olympus Mons, a shield volcano, is 21 kilometers tall and many scientists believe it’s still active. The computer gives you the go-ahead to depart the ship and explore, so step off and decide which direction to go:"
+      "Welcome to Mars, also known as the “Red Planet,” and home to the tallest mountain in the solar system! Olympus Mons, a shield volcano, is 21 kilometers tall and many scientists believe it’s still active. The computer gives you the go-ahead to depart the ship and explore, so you step off and decide which direction to go:"
     ],
     "choices": ["East", "West"]
   },
@@ -152,7 +152,7 @@
   {
     "id": 19,
     "question": [
-      "As you’re walking, you see some dark stripes on a crater wall. Could this be ice? Mars is known to have water (in the form of ice) on its surface. Maybe you’ve found some! You start to wonder if aliens could be real… maybe they’re the ones who left you that mysterious package?"
+      "As you’re walking, you see some dark stripes on a crater wall. Could this be ice? Mars is known to have water (in the form of ice) on its surface, and where there's water, there might be life. Maybe you’ve found some! You start to wonder if aliens could be real… maybe they’re the ones who left you that mysterious package?"
     ],
     "choices": ["It’s starting to get cold, so you head back to the ship."]
   },
@@ -166,7 +166,7 @@
   {
     "id": 21,
     "question": [
-      "Welcome to Jupiter! Jupiter is so large that it’s two and a half times more massive than all of the other planets in the solar system combined. While its interior is made of rock, metal, and hydrogen compounds, it has a massive atmosphere that you have to get through first. This is why it’s known as a “gas giant”! As you near closer, you tell the ship to:"
+      "Welcome to Jupiter! Jupiter is so large that it’s two and a half times more massive than all of the other planets in the solar system combined. While its interior is made of rock, metal, and hydrogen compounds, it has a massive atmosphere that you have to get through first. This is why it’s known as a 'gas giant'! As you near closer, you tell the ship to:"
     ],
     "choices": [
       "Stay in the outermost part of the atmosphere.",
@@ -197,7 +197,7 @@
   {
     "id": 25,
     "question": [
-      "Welcome to Saturn! Best known for its enormous ring system, Saturn is mainly composed of gases, including hydrogen, helium, and methane. Its rings are made mostly of chunks of ice and dust. While these rings stretch out more than 120,700 km from the planet, they’re only about 20 meters thick. You notice that all of that ice and dust moves fast! Do you:"
+      "Welcome to Saturn! Best known for its enormous ring system, Saturn is mainly composed of gases, including hydrogen, helium, and methane. Its rings are made mostly of chunks of ice and dust. While these rings stretch out more than 120,700 kilometers from the planet, they’re only about 20 meters thick. You notice that all of that ice and dust moves fast! Do you:"
     ],
     "choices": [
       "Send the ship through the ring system to get a closer look at the atmosphere.",
@@ -258,7 +258,7 @@
   {
     "id": 32,
     "question": [
-      "As you fly nearer to the surface of this beloved dwarf planet, you see an odd structure poking above the horizon.",
+      "As you fly nearer to the surface of this beloved dwarf planet, you see an odd structure protruding above the horizon.",
       "'What could this possibly be?' you wonder.",
       "Do you:"
     ],
@@ -270,7 +270,7 @@
   {
     "id": 33,
     "question": [
-      "As you land, a few tall, blue creatures appear outside of the ship. They summon you, and even though you feel afraid, you appear to no longer be in control of your body. It’s as if it were walking on its own!",
+      "As you land, a few tall, blue creatures appear outside of the ship. They summon you, and even though you feel afraid, you seem to no longer be in control of your body. It’s as if it were walking on its own!",
       "'We knew you would come,' they say in unison. 'Prophecy told of an Earth child who would bring us the final ingredients for our grand experiment. Did you succeed?'"
     ],
     "choices": [
