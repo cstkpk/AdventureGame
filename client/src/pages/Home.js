@@ -27,12 +27,14 @@ class Home extends Component {
     showModal: false
   };
 
+  // Close modal function
   close = () => {
     this.setState({
       showModal: false
     });
   };
 
+  // Open modal function
   open = event => {
     event.preventDefault();
     this.setState({
@@ -40,6 +42,8 @@ class Home extends Component {
     });
   };
 
+  // Toggles hidden/shown components on click and sets states for audio
+  // Creates player document in DB
   toggleHidden = event => {
     event.preventDefault();
     this.setState({
@@ -75,6 +79,7 @@ class Home extends Component {
       .catch(err => console.log(err));
   };
 
+  // Handles change for name field
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -82,6 +87,8 @@ class Home extends Component {
     });
   };
 
+  // Switch statement to handle states for questions and answers from QA data array
+  // Handles database queries related to player answer choices
   nextQuestion = choices => {
     var currentID = JSON.parse(sessionStorage.getItem("playerID"));
     API.updatePlayer(currentID, { playerChoices: choices })
@@ -439,16 +446,19 @@ class Home extends Component {
     }
   };
 
+  // Function to handle initial Solar System OpenData API query upon page load
   componentDidMount() {
     this.searchBodies("earth");
   }
 
+  // Function to handle subsequent Solar System OpenData API queries based on player's answer choices
   searchBodies = query => {
     API.search(query)
       .then(res => this.setState({ result: res.data }))
       .catch(err => console.log(err));
   };
 
+  // Render page
   render() {
     // To check if input name contains a number
     var hasNumber = /\d/;
