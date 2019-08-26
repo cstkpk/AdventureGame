@@ -36,7 +36,7 @@
   z-index: 2;
 }
 
-p:last-child:after {
+li:last-child:after {
   animation: blink 1s infinite;
   content: "_";
 }

@@ -9,11 +9,6 @@ body {
   background-color: black;
 }
 
-p:last-child:after {
-  animation: blink 1s infinite;
-  content: "_";
-}
-
 @keyframes colorPulse {
   0%,
   100% {
