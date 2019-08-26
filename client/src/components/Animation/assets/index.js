@@ -68,5 +68,9 @@ module.exports = {
   packageAnimation: {
     image: require("./gifs/package.gif"),
     alt: "Package opening"
+  },
+
+  nightSound: {
+    sound: require("./audio/nighttime.mp3")
   }
 };

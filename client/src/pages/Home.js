@@ -17,6 +17,7 @@ class Home extends Component {
     answerChoices: QA[0].choices,
     image: images.bedroomAnimation.image,
     alt: images.bedroomAnimation.alt,
+    audio: {},
     result: {},
     isHidden: true,
     isHiddenForm: false,
@@ -43,7 +44,8 @@ class Home extends Component {
     setTimeout(
       () =>
         this.setState({
-          isHidden: !this.state.isHidden
+          isHidden: !this.state.isHidden,
+          audio: images.nightSound.sound
         }),
       3000
     );
