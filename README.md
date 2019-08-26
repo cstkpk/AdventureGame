@@ -24,6 +24,7 @@ Alternatively, follow this link to play on Heroku: https://solarsystemadventure.
 - Mongoose 
 - JavaScript
 - Axios 
+- The Solar System OpenData API
 - RegEx
 - Aseprite
 
