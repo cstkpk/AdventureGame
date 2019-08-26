@@ -25,6 +25,7 @@ Alternatively, follow this link to play on Heroku: https://solarsystemadventure.
 - JavaScript
 - Axios 
 - The Solar System OpenData API
+- Moment.js
 - RegEx
 - Aseprite
 

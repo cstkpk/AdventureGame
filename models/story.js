@@ -9,10 +9,6 @@ const storySchema = new Schema({
     playerChoices: {
         type: Array
     },
-    element1: {
-        type: Boolean,
-        default: false
-    },
     moon: {
         type: Boolean,
         default: false
