@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { Row, Container, Modal, Button } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import QA from "../data/questions.json";
 import QADisplay from "../components/QADisplay";
 import Animation from "../components/Animation";
 import SpaceAPI from "../components/SpaceAPI";
 import IntroForm from "../components/IntroForm";
+import WarnModal from "../components/WarnModal";
 import * as images from "../components/Animation/assets";
 import API from "../utils/API.js";
+import Sound from "react-sound";
 import "./Home.css";
 
 class Home extends Component {
@@ -16,6 +18,8 @@ class Home extends Component {
     answerChoices: QA[0].choices,
     image: images.bedroomAnimation.image,
     alt: images.bedroomAnimation.alt,
+    audio: {},
+    playStatus: Sound.status.PAUSED,
     result: {},
     isHidden: true,
     isHiddenForm: false,
@@ -38,13 +42,17 @@ class Home extends Component {
 
   toggleHidden = event => {
     event.preventDefault();
-    this.setState({ isHiddenForm: !this.state.isHiddenForm });
+    this.setState({
+      isHiddenForm: !this.state.isHiddenForm,
+      playStatus: Sound.status.PLAYING
+    });
     setTimeout(
       () =>
         this.setState({
-          isHidden: !this.state.isHidden
+          isHidden: !this.state.isHidden,
+          playStatus: Sound.status.PAUSED
         }),
-      3000
+      5000
     );
     console.log(this.state.playerName);
     API.createPlayer({ playerName: this.state.playerName })
@@ -98,8 +106,8 @@ class Home extends Component {
         this.setState({
           question: QA[2].question,
           answerChoices: QA[2].choices,
-          image: images.rocketLeaveEarth.image,
-          alt: images.rocketLeaveEarth.alt
+          image: images.packageAnimation.image,
+          alt: images.packageAnimation.alt
         });
         API.updatePlayer(currentID, { element1: true })
           .then(res => {
@@ -110,7 +118,9 @@ class Home extends Component {
       case "Next":
         this.setState({
           question: QA[3].question,
-          answerChoices: QA[3].choices
+          answerChoices: QA[3].choices,
+          image: images.rocketLeaveEarth.image,
+          alt: images.rocketLeaveEarth.alt
         });
         break;
       case "You completely forgot!":
@@ -445,6 +455,13 @@ class Home extends Component {
 
     return (
       <Container fluid={true}>
+        <Sound
+          url={images.nightSound.sound}
+          playStatus={this.state.playStatus}
+          onLoading={this.handleSongLoading}
+          onPlaying={this.handleSongPlaying}
+          onFinishedPlaying={this.handleSongFinishedPlaying}
+        />
         <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />
@@ -492,20 +509,11 @@ class Home extends Component {
             onChange={this.handleInputChange}
           />
         )}
-        <Modal id="modal-style" show={this.state.showModal} onHide={this.close}>
-          <Modal.Body className="modal-bg">
-            <h4 className="text-center">Please Enter Your Name</h4>
-          </Modal.Body>
-          <Modal.Body className="modal-bg">
-            <Button
-              variant="success"
-              className="btn-block"
-              onClick={this.close}
-            >
-              Close
-            </Button>
-          </Modal.Body>
-        </Modal>
+        <WarnModal
+          show={this.state.showModal}
+          onHide={this.close}
+          onClick={this.close}
+        />
       </Container>
     );
   }

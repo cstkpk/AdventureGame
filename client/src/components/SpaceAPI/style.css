@@ -36,7 +36,7 @@
   z-index: 2;
 }
 
-p:last-child:after {
+li:last-child:after {
   animation: blink 1s infinite;
   content: "_";
 }
@@ -76,5 +76,12 @@ p:last-child:after {
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+/* Media tag for phone */
+@media screen and (max-width: 768px) {
+  #facts {
+    margin-top: 20px;
   }
 }
