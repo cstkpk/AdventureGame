@@ -11,7 +11,7 @@ function IntroForm(props) {
           <Form.Control
             type="text"
             placeholder="Marvin the Martian"
-            autocomplete="off"
+            autoComplete="off"
             name={props.name}
             value={props.value}
             onChange={props.onChange}

@@ -452,7 +452,7 @@ class Home extends Component {
     return (
       <Container fluid={true}>
         <Sound
-          url={image.nightSound.sound}
+          url={images.nightSound.sound}
           playStatus={Sound.status.PLAYING}
           onLoading={this.handleSongLoading}
           onPlaying={this.handleSongPlaying}
