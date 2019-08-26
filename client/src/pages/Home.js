@@ -19,6 +19,7 @@ class Home extends Component {
     image: images.bedroomAnimation.image,
     alt: images.bedroomAnimation.alt,
     audio: {},
+    playStatus: Sound.status.PAUSED,
     result: {},
     isHidden: true,
     isHiddenForm: false,
@@ -41,12 +42,14 @@ class Home extends Component {
 
   toggleHidden = event => {
     event.preventDefault();
-    this.setState({ isHiddenForm: !this.state.isHiddenForm });
+    this.setState({ 
+        isHiddenForm: !this.state.isHiddenForm,
+        playStatus: Sound.status.PLAYING
+     });
     setTimeout(
       () =>
         this.setState({
           isHidden: !this.state.isHidden,
-          audio: images.nightSound.sound
         }),
       3000
     );
@@ -453,7 +456,11 @@ class Home extends Component {
       <Container fluid={true}>
         <Sound
           url={images.nightSound.sound}
+<<<<<<< Updated upstream
           playStatus={Sound.status.PLAYING}
+=======
+          playStatus={this.state.playStatus}
+>>>>>>> Stashed changes
           onLoading={this.handleSongLoading}
           onPlaying={this.handleSongPlaying}
           onFinishedPlaying={this.handleSongFinishedPlaying}

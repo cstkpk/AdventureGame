@@ -10,8 +10,13 @@ function IntroForm(props) {
           <Form.Label>Enter your name:</Form.Label>
           <Form.Control
             type="text"
+<<<<<<< Updated upstream
             placeholder="Marvin the Martian"
             autoComplete="off"
+=======
+            placeholder="E.g. Marvin the Martian"
+            autocomplete="off"
+>>>>>>> Stashed changes
             name={props.name}
             value={props.value}
             onChange={props.onChange}
