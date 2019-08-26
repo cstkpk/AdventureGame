@@ -27,22 +27,22 @@
     {
         "id": 5,
         "type": "Venus",
-        "text": "After you reboarded the ship, you decided to make Venus your next destination. It was once thought that Venus might be a tropical paradise, but once radio mapping was developed in the 1960s, scientists were able to measure the extreme temperatures and pressures. Venus's dense atmosphere of carbon dioxide traps heat and causes a greenhouse effect, making it the hottest planet in our solar system. Its atmospheric pressure is so high that it crushes any asteroids before they even make impact with the surface. It's a good thing you decided not to attempt any landings!"
+        "text": "After you reboarded the ship, you decided to make Venus your next destination. It was once thought that Venus might be a tropical paradise, but when radio mapping was developed in the 1960s, scientists were able to measure the extreme temperatures and pressures. Venus's dense atmosphere of carbon dioxide traps heat and causes a greenhouse effect, making it the hottest planet in our solar system. Its atmospheric pressure is so high that it crushes any asteroids before they even make impact with the surface. It's a good thing you decided not to attempt any landings!"
     },
     {
         "id": 6,
         "type": "Venus landing",
-        "text": "After you reboarded the ship, you decided to make Venus your next destination. It was once thought that Venus might be a tropical paradise, but once radio mapping was developed in the 1960s, scientists were able to measure the extreme temperatures and pressures. Venus's dense atmosphere of carbon dioxide traps heat and causes a greenhouse effect, making it the hottest planet in our solar system. Its atmospheric pressure is so high that it crushes any asteroids before they even make impact with the surface... which is why your ship broke apart when you tried to land! At least you'll know better for next time."
+        "text": "After you reboarded the ship, you decided to make Venus your next destination. It was once thought that Venus might be a tropical paradise, but when radio mapping was developed in the 1960s, scientists were able to measure the extreme temperatures and pressures. Venus's dense atmosphere of carbon dioxide traps heat and causes a greenhouse effect, making it the hottest planet in our solar system. Its atmospheric pressure is so high that it crushes any asteroids before they even make impact with the surface... which is why your ship broke apart when you tried to land! At least you'll know better for next time."
     },
     {
         "id": 7,
         "type": "Mars",
-        "text": "After you reboarded the ship, you decided to make Mars your next destination. As you were exploring, you saw some dark stripes on a crater wall. Then you remembered that there are signs of liquid water on Mars! Scientists have discoverd water on Mars in the form of ice. In satellite images, we can see signs of trickling water as dark stripes or stains on cliffs and crater walls. However, this water would have to be salty, or else it would freeze or vaporize due to Mars's thin atmosphere. Could the mysterious creatures who sent you on this mission once have lived here?"
+        "text": "After you reboarded the ship, you decided to make Mars your next destination. As you were exploring, you saw some dark stripes on a crater wall. Then you remembered that there are signs of liquid water on Mars! Scientists have discoverd water on Mars in the form of ice. In satellite images, we can see signs of trickling water as dark stripes or stains on cliffs and crater walls. However, this water would have to be salty, or else it would freeze or evaporate due to Mars's thin atmosphere. Could the mysterious creatures who sent you on this mission once have lived here?"
     },
     {
         "id": 8,
         "type": "Mars dust storm",
-        "text": "After you reboarded the ship, you decided to make Mars your next destination. You headed East and quickly ran into a massive dust storm. Even though Mars has a thin atmosphere, it still creates wind, and when these winds pick up the fine, dry dust particles of Mars's surface, they can create enormous dust storms. These storms can last for days and reach wind speeds of over 100 kilometers per hour! Sometimes, the storms can get so large that they cover the entire planet in dust for weeks. It looks like you'll have to wait a while before you can continue on your journey!"
+        "text": "After you reboarded the ship, you decided to make Mars your next destination. You headed East and quickly ran into a massive dust storm. Even though Mars has a thin atmosphere, it still generates wind, and when these winds pick up the fine, dry dust particles of Mars's surface, they can create enormous dust storms. These storms can last for days and reach wind speeds of over 100 kilometers per hour! Sometimes, the storms can get so large that they cover the entire planet in dust for weeks. It looks like you'll have to wait a while before you can continue on your journey!"
     },
     {
         "id": 9,
@@ -77,22 +77,22 @@
     {
         "id": 15,
         "type": "Neptune",
-        "text": "To end your day's adventure, you stopped by Neptune. You admired the power of its Great Dark Spot and learned that Neptune has the fastest known wind speeds in the solar system! Neptune also has a notably thick atmosphere composed of 74% hydrogen, 25% helium, and 1% methane. Particles of icy methane and minor gases give Neptune its dark blue color. Isn't our location in the universe amazing?"
+        "text": "To end your day's adventure, you stopped by Neptune. You admired the power of its Great Dark Spot and learned that Neptune has the fastest known wind speeds in the solar system! Neptune also has a notably thick atmosphere composed of 74% hydrogen, 25% helium, and 1% methane. Particles of icy methane and minor gases give Neptune its dark blue color. Isn't our solar system amazing?"
     },
     {
         "id": 16,
         "type": "Pluto",
-        "text": "To end your day's adventure, you stopped by Pluto. As you neared closer to the surface, you saw an odd structure poking above the horizon. You knew this wasn't a natural feature of the dwarf planet... but it's been such a long day that you decided it wasn't worth risking your skin to check it out."
+        "text": "To end your day's adventure, you stopped by Pluto. As you neared closer to the surface, you saw an odd structure protruding above the horizon. You knew this wasn't a natural feature of the dwarf planet... but it's been such a long day that you decided it wasn't worth risking your skin to check it out."
     },
     {
         "id": 17,
         "type": "Pluto with landing",
-        "text": "To end your day's adventure, you stopped by Pluto. As you neared closer to the surface, you saw an odd structure poking above the horizon. You knew this wasn't a natural feature of the dwarf planet... but you were burning with curiosity at this point, so you decided to land nearby and check it out. After you landed, tall blue creatures surrounded the ship and summoned you into some kind of cosmic ceremony. They chanted in appreciation for your courage and celestial spirit! Although you were unable to find the minerals they needed to complete their secret project, they still invited you to their deep space feast of a bread-like substance baked in their nuclear fusion oven (technology borrowed from our very own Sun!) before sending you safely home."
+        "text": "To end your day's adventure, you stopped by Pluto. As you neared closer to the surface, you saw an odd structure protruding above the horizon. You knew this wasn't a natural feature of the dwarf planet... but you were burning with curiosity at this point, so you decided to land nearby and check it out. After you landed, tall blue creatures surrounded the ship and summoned you into some kind of cosmic ceremony. They chanted in appreciation for your courage and celestial spirit! Although you were unable to find the minerals they needed to complete their secret project, they still invited you to their deep space feast of a bread-like substance baked in their nuclear fusion oven (technology borrowed from our very own Sun!) before sending you safely home."
     },
     {
         "id": 18,
         "type": "Pluto with landing plus box(es)",
-        "text": "To end your day's adventure, you stopped by Pluto. As you neared closer to the surface, you saw an odd structure poking above the horizon. You knew this wasn't a natural feature of the dwarf planet... but you were burning with curiosity at this point, so you decided to land nearby and check it out. After you landed, tall blue creatures surrounded the ship and summoned you into some kind of cosmic ceremony. They chanted in appreciation for your courage and celestial spirit! You even found the minerals they needed to complete their secret project: a brand new device for hyperspeed deep space travel! They invited you to be the guest of honor to their deep space feast of a bread-like substance baked in their nuclear fusion oven (technology borrowed from our very own Sun!)."
+        "text": "To end your day's adventure, you stopped by Pluto. As you neared closer to the surface, you saw an odd structure protruding above the horizon. You knew this wasn't a natural feature of the dwarf planet... but you were burning with curiosity at this point, so you decided to land nearby and check it out. After you landed, tall blue creatures surrounded the ship and summoned you into some kind of cosmic ceremony. They chanted in appreciation for your courage and celestial spirit! You even found the minerals they needed to complete their secret project: a brand new device for hyperspeed deep space travel! They invited you to be the guest of honor to their deep space feast of a bread-like substance baked in their nuclear fusion oven (technology borrowed from our very own Sun!)."
     },
     {
         "id": 19,
