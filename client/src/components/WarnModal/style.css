@@ -1,13 +1,11 @@
 #modal-style {
     animation: colorPulse 5s infinite ease-in-out;
-    /* background-image: radial-gradient(#444, #111); */
     box-shadow: 0 0 5vmin 1vmin #000 inset;
     box-sizing: border-box;
     font-family: "Press Start 2P", cursive;
     font-size: 20px;
     overflow: hidden;
     border-radius: 0;
-    /* background-color: black; */
     line-height: 40px;  
 }
   
@@ -36,7 +34,5 @@
 }
   
 .modal-bg {
-    /* background-color: black; */
       background-image: radial-gradient(rgba(68, 68, 68), rgba(25, 25, 25));
-    /* background-color: rgba(50, 50, 50, 0.8) */
 }
