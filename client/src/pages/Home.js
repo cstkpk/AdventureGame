@@ -8,6 +8,7 @@ import IntroForm from "../components/IntroForm";
 import WarnModal from "../components/WarnModal";
 import * as images from "../components/Animation/assets";
 import API from "../utils/API.js";
+import Sound from "react-sound";
 import "./Home.css";
 
 class Home extends Component {
@@ -450,6 +451,13 @@ class Home extends Component {
 
     return (
       <Container fluid={true}>
+        <Sound
+          url={image.nightSound.sound}
+          playStatus={Sound.status.PLAYING}
+          onLoading={this.handleSongLoading}
+          onPlaying={this.handleSongPlaying}
+          onFinishedPlaying={this.handleSongFinishedPlaying}
+        />
         <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />
