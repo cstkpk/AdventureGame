@@ -42,14 +42,14 @@ class Home extends Component {
 
   toggleHidden = event => {
     event.preventDefault();
-    this.setState({ 
-        isHiddenForm: !this.state.isHiddenForm,
-        playStatus: Sound.status.PLAYING
-     });
+    this.setState({
+      isHiddenForm: !this.state.isHiddenForm,
+      playStatus: Sound.status.PLAYING
+    });
     setTimeout(
       () =>
         this.setState({
-          isHidden: !this.state.isHidden,
+          isHidden: !this.state.isHidden
         }),
       3000
     );
@@ -456,11 +456,7 @@ class Home extends Component {
       <Container fluid={true}>
         <Sound
           url={images.nightSound.sound}
-<<<<<<< Updated upstream
-          playStatus={Sound.status.PLAYING}
-=======
           playStatus={this.state.playStatus}
->>>>>>> Stashed changes
           onLoading={this.handleSongLoading}
           onPlaying={this.handleSongPlaying}
           onFinishedPlaying={this.handleSongFinishedPlaying}
