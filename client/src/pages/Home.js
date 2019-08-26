@@ -49,9 +49,10 @@ class Home extends Component {
     setTimeout(
       () =>
         this.setState({
-          isHidden: !this.state.isHidden
+          isHidden: !this.state.isHidden,
+          playStatus: Sound.status.PAUSED
         }),
-      3000
+      5000
     );
     console.log(this.state.playerName);
     API.createPlayer({ playerName: this.state.playerName })
